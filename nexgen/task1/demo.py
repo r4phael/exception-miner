@@ -11,7 +11,6 @@ from model import (HierarchicalAttentionNetwork, SentenceAttention,
 from sklearn import metrics
 from termcolor import colored
 from tqdm import tqdm
-from utils import read_pkl
 
 # Data parameters
 data_folder = './output'
@@ -47,23 +46,23 @@ def get_line_color(label: int, prediction: int) -> bcolors:
 
 def get_formatted_line(tokens: List[str]) -> str:
     return re.sub(r"(\w)\s{2,}", r'\1 ', (''.join(tokens)
-                                         .replace(' . ', '.')
-                                         .replace(' ;', ';')
-                                         .replace(' ( ', '(')
-                                         .replace(' ) ', ')')
-                                         .replace(' < ', '<')
-                                         .replace(' > ', '>')
-                                         .replace(' , ', ', ')
-                                         .replace(' { ', '{')
-                                         .replace(' } ', '}')
-                                         .replace('\r', '')
-                                         ))
+                                          .replace(' . ', '.')
+                                          .replace(' ;', ';')
+                                          .replace(' ( ', '(')
+                                          .replace(' ) ', ')')
+                                          .replace(' < ', '<')
+                                          .replace(' > ', '>')
+                                          .replace(' , ', ', ')
+                                          .replace(' { ', '{')
+                                          .replace(' } ', '}')
+                                          .replace('\r', '')
+                                          ))
 
 
-def print_pair_task1(lines: List[str], labels: List[float], predictions: List[int]):
-    for labels, lines, predictions in zip(labels, lines, predictions):
+def print_pair_task1(test_lines: List[List[List[str]]], test_labels: List[List[float]], test_predictions: List[List[int]]):
+    for labels, lines, predictions in zip(test_labels, test_lines, test_predictions):
         print('\n'.join([
-            get_color_string(get_line_color(label, prediction),
+            get_color_string(get_line_color(int(label), prediction),
                              f"truth: {int(label)} pred: {int(prediction)} {get_formatted_line(line)}")
             for label, line, prediction in zip(labels, lines, predictions)
         ]), end='\n\n')
@@ -80,6 +79,7 @@ def predict(epoch):
     model.eval()
     y_t, y_p = [], []
     res = []
+    test_predictions = []
     # Evaluate in batches
     for i, (documents, sentences_per_document, words_per_sentence, labels) in enumerate(
             tqdm(test_loader, desc='Evaluating')):
@@ -102,6 +102,7 @@ def predict(epoch):
         for j, (length, nums) in enumerate(zip(sentences_per_document.tolist(), words_per_sentence.tolist())):
             truth = labels[j][:length]
             prediction = predictions[j][:length]
+            test_predictions.extend(predictions)
             # res.extend((prediction == truth).float().cpu())
             res.append(1) if prediction.equal(truth) else res.append(0)
 
@@ -109,7 +110,7 @@ def predict(epoch):
                 y_t.extend([t])
                 y_p.extend([p])
 
-    print_pair_task1(test_docs, labels, predictions)
+    print_pair_task1(test_docs, test_labels, test_predictions)
 
     acc = sum(res)/len(res)
     print('Accuracy:', acc)
