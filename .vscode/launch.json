@@ -40,6 +40,35 @@
             "program": "miner_py_demo_file.py",
             "console": "integratedTerminal",
             "justMyCode": true,
+        },
+        {
+            "name": "nexgen predict",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/nexgen/task1",
+            "program": "train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["test", "19"]
+        },
+        {
+            "name": "nexgen java predict",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/../nexgen/task1",
+            "program": "train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["test", "19"]
+        },
+        {
+            "name": "nexgen java demo",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/../nexgen/task1",
+            "program": "demo.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
         }
     ]
 }
