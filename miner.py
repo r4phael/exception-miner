@@ -7,11 +7,12 @@ import pandas as pd
 from pydriller import Git
 from tqdm import tqdm
 
-from miner_py_src.call_graph import CFG, generate_cfg
+#from miner_py_src.call_graph import CFG, generate_cfg
 from miner_py_src.exceptions import FunctionDefNotFoundException
 from miner_py_src.miner_py_utils import get_function_defs
 from miner_py_src.stats import FileStats
 from miner_py_src.tree_sitter_lang import parser as tree_sitter_parser
+from miner_py_src.tree_sitter_lang_java import parser as tree_sitter_parser_java
 from utils import create_logger
 
 logger = create_logger("exception_miner", "exception_miner.log")
@@ -30,7 +31,7 @@ def fetch_gh(projects, dir='projects/py/'):
             logger.warning(f"EH MINING: error cloing project {project} {e}")
 
 
-def fetch_repositories(project):
+def fetch_repositories(project, language):
 
     # projects = pd.read_csv("projects.csv", sep=",")
     # for index, row in projects.iterrows():
@@ -54,10 +55,11 @@ def fetch_repositories(project):
         logger.warning(
             "Exception Miner: After init git repo: {}".format(project))
 
+        lang_suffix = ".py" if language == "python" else ".java"
         files = [
             f
             for f in gr.files()
-            if pathlib.Path(rf"{f}").suffix == ".py" and not os.path.islink(f)
+            if pathlib.Path(rf"{f}").suffix == lang_suffix and not os.path.islink(f)
         ]
 
         return files
@@ -75,12 +77,13 @@ def __get_method_name(node):  # -> str | None:
             return child.text.decode("utf-8")
 
 
-def collect_parser(files, project_name):
+def collect_parser(files, project_name, language):
 
     df = pd.DataFrame(
-        columns=["file", "function", "func_body", "n_try_except", "n_try_pass", "n_finally",
-                 "n_generic_except", "n_raise", "n_captures_broad_raise", "n_captures_try_except_raise", "n_captures_misplaced_bare_raise",
-                 "n_try_else", "n_try_return", "str_except_identifiers", "str_raise_identifiers", "str_except_block", "str_uncaught_exceptions"]
+         columns=["file", "function", "func_body", "n_try_except", "n_raise", "n_finally"]
+        #columns=["file", "function", "func_body", "n_try_except", "n_try_pass", "n_finally",
+        #         "n_generic_except", "n_raise", "n_captures_broad_raise", "n_captures_try_except_raise", "n_captures_misplaced_bare_raise",
+        #         "n_try_else", "n_try_return", "str_except_identifiers", "str_raise_identifiers", "str_except_block", "str_uncaught_exceptions"]
     )
 
     file_stats = FileStats()
@@ -98,12 +101,15 @@ def collect_parser(files, project_name):
                 )
                 continue
         try:
-            tree = tree_sitter_parser.parse(content)
+            if language == "python":
+                tree = tree_sitter_parser.parse(content)
+            else:
+                tree = tree_sitter_parser_java.parse(content)
         except SyntaxError as ex:
             tqdm.write(
                 f"###### SyntaxError Error!!! file: {file_path}.\n{str(ex)}")
         else:
-            captures = get_function_defs(tree)
+            captures = get_function_defs(tree, language)
             for child in captures:
                 # print("Function: ", __get_method_name(child))
                 function_identifier = __get_method_name(child)
@@ -112,8 +118,8 @@ def collect_parser(files, project_name):
                         f'Function identifier not found:\n {child.text}')
 
                 func_defs.append(function_identifier)
-                file_stats.metrics(child, file_path)
-                metrics = file_stats.get_metrics(child)
+                #file_stats.metrics(child, file_path)
+                metrics = file_stats.get_metrics_mult(child, language)
                 df = pd.concat(
                     [
                         pd.DataFrame(
@@ -135,6 +141,7 @@ def collect_parser(files, project_name):
 
     logger.warning("before call graph...")
 
+    """
     call_graph = generate_cfg(project_name, os.path.normpath(
         f"projects/py/{project_name}"))
 
@@ -198,6 +205,7 @@ def collect_parser(files, project_name):
                 # append uncaught exception
                 df.iloc[idx, df.columns.get_loc(
                     'str_uncaught_exceptions')] = (old_value + f" {func_name}:{uncaught_exception}").strip()
+    """
 
     # func_defs_try_except = [
     #     f for f in func_defs if check_function_has_except_handler(f)
@@ -211,7 +219,7 @@ def collect_parser(files, project_name):
 
 if __name__ == "__main__":
     projects = pd.read_csv("projects_mult.csv", sep=",")
-    fetch_gh(projects=projects)
+    #fetch_gh(projects=projects)
     for index, row in projects.iterrows():
-        files = fetch_repositories(row['name'])
-        collect_parser(files, row['name'])
+        files = fetch_repositories(row['name'], row['language'])
+        collect_parser(files, row['name'], row['language'])

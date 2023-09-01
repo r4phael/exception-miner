@@ -31,6 +31,11 @@ from .tree_sitter_lang import (
     QUERY_EXCEPT_BLOCK,
 )
 
+from .tree_sitter_lang_java import (QUERY_EXCEPT_CLAUSE_JAVA, 
+                                    QUERY_RAISE_STATEMENT_JAVA, 
+                                    QUERY_FINALLY_BLOCK_JAVA,
+                                    QUERY_FUNCTION_DEF_JAVA)
+
 from .exceptions import (
     ExceptClauseExpectedException,
     FunctionDefNotFoundException,
@@ -101,8 +106,11 @@ def get_function_def(node: Node) -> Node:
     return captures[0][0]
 
 
-def get_function_defs(tree: Tree) -> List[Node]:
-    captures = QUERY_FUNCTION_DEF.captures(tree.root_node)
+def get_function_defs(tree: Tree, language) -> List[Node]:
+    if language == "python":
+        captures = QUERY_FUNCTION_DEF.captures(tree.root_node)
+    else:
+        captures = QUERY_FUNCTION_DEF_JAVA.captures(tree.root_node)
     return [c for c, _ in captures]
 
 
@@ -167,14 +175,19 @@ def check_function_has_except_handler(node: Node):
     captures = QUERY_EXCEPT_CLAUSE.captures(node)
     return len(captures) != 0
 
-def get_except_clause(node: Node):
-    captures = QUERY_EXCEPT_CLAUSE.captures(node)
+
+def get_except_clause(node: Node, language):
+    if language == "python":
+        captures = QUERY_EXCEPT_CLAUSE.captures(node)
+    else:
+        captures = QUERY_EXCEPT_CLAUSE_JAVA.captures(node)
     return captures
 
 
 def get_except_block(node: Node):
     captures = QUERY_EXCEPT_BLOCK.captures(node)
     return captures
+
 
 def statement_couter(node: Node):
     captures = QUERY_EXPRESSION_STATEMENT.captures(node)
@@ -199,12 +212,20 @@ def count_try_return(node: Node):
     captures = QUERY_TRY_RETURN.captures(node)
     return len(captures)
 
-def count_finally(node: Node):
-    captures = QUERY_FINALLY_BLOCK.captures(node)
+
+def count_finally(node: Node, language):
+    if language == "python":
+        captures = QUERY_FINALLY_BLOCK.captures(node)
+    else:
+        captures = QUERY_FINALLY_BLOCK_JAVA.captures(node)
     return len(captures)
 
-def count_raise(node: Node):
-    captures = QUERY_RAISE_STATEMENT.captures(node)
+
+def count_raise(node: Node, language):
+    if language == "python":
+        captures = QUERY_RAISE_STATEMENT.captures(node)
+    else:
+        captures = QUERY_RAISE_STATEMENT_JAVA.captures(node)
     return len(captures)
 
 

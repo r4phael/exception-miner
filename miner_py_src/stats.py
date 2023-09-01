@@ -63,6 +63,28 @@ class FileStats:
             f"# generic exception per file:         {(len(self.files_generic_except) / self.num_files) * 100:.2f}%\n"
             f"# generic exception per function definition: {(len(self.func_generic_except) / max(self.num_functions, 1)) * 100:.2f}%\n"
         )
+    
+    def get_metrics_mult(self, func_def: Node, language):
+        """
+        Return a list of exception handling metrics in the following order: try-except clauses,
+            try-pass, generic-except
+        """        
+        n_try_except = 0
+
+        captures_except = get_except_clause(func_def, language)
+
+        n_raise = count_raise(func_def, language)
+        
+        n_finally = count_finally(func_def, language) 
+        
+        for _ in captures_except:
+            n_try_except += 1
+
+        return {
+            "n_try_except": n_try_except,
+            "n_raise": n_raise,
+            "n_finally": n_finally
+        }
 
     def get_metrics(self, func_def: Node):
         """
@@ -71,7 +93,7 @@ class FileStats:
         """
         n_try_except, n_try_pass, n_generic_except = 0, 0, 0
 
-        captures_except = get_except_clause(func_def)
+        captures_except = get_except_clause(func_def, "python")
 
         n_captures_broad_raise = count_broad_exception_raised(func_def)
 
@@ -79,7 +101,7 @@ class FileStats:
 
         n_captures_misplaced_bare_raise = count_misplaced_bare_raise(func_def)
 
-        n_raise = count_raise(func_def)
+        n_raise = count_raise(func_def, "python")
 
         n_try_else = count_try_else(func_def)
 
@@ -87,7 +109,7 @@ class FileStats:
 
         #captures_except_ident = QUERY_EXCEPT_IDENTIFIER.captures(func_def)       
 
-        n_finally = count_finally(func_def) 
+        n_finally = count_finally(func_def, "python") 
     
         captures_except_ident = get_except_identifiers(func_def)
 
