@@ -33,7 +33,7 @@
             "name": "miner preprocess",
             "type": "python",
             "request": "launch",
-            "program": "miner_py.py",
+            "program": "./miner_py.py",
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": [

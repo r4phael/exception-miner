@@ -134,7 +134,7 @@ def get_files():
 
 
 def save_datasets(task1: pd.DataFrame, task2: pd.DataFrame):
-    print("Saving pickle datasets ...")
+    print("Saving datasets task1 task2 ...")
 
     os.makedirs("output/py/data", exist_ok=True)
 
@@ -150,12 +150,13 @@ def preprocess():
     files = get_files()
 
     files_counter = 0
-    for batch_files in batch(files, 10000):
+    for batch_files in batch(files, 5000):
         task1, task2 = build_datasets(batch_files, file_stats, tbld_stats, cgbd_stats)
 
         save_datasets(task1, task2)
 
         files_counter += len(batch_files)
+        break
 
     print(file_stats)
     print(tbld_stats)

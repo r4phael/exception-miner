@@ -3,13 +3,15 @@ import io
 import token
 import tokenize
 from typing import List
+from tqdm import tqdm
 
 import astunparse
 from numpy.random import default_rng
 from tree_sitter.binding import Node
 
-from .exceptions import TreeSitterNodeException
-from .miner_py_utils import TryNotFoundException, get_try_slices
+from .exceptions import (MinerPyError, TreeSitterNodeException,
+                         TryNotFoundException)
+from .miner_py_utils import get_try_slices
 from .stats import CBGDStats
 
 rng = default_rng()
@@ -39,15 +41,17 @@ class ExceptDatasetGenerator:
     def generate(self):
         generated = []
 
-        for func_def in self.func_defs:
+        for func_def in tqdm(self.func_defs):
             try:
                 tokenized_function_def = self.tokenize_function_def(func_def)
 
-                if tokenized_function_def is not None:
-                    generated += tokenized_function_def
-                    self.stats.increment_function_counter()
-                    self.stats.increment_statements_counter(func_def)
-                    self.stats.increment_except_stats(func_def)
+                if tokenized_function_def is None:
+                    continue
+
+                generated += tokenized_function_def
+                self.stats.increment_function_counter()
+                self.stats.increment_statements_counter(func_def)
+                self.stats.increment_except_stats(func_def)
             except SyntaxError as e:
                 print(
                     f"###### SyntaxError Error!!! in ast.FunctionDef {str(func_def)}.\n{str(e)}")
@@ -59,6 +63,10 @@ class ExceptDatasetGenerator:
             except ValueError as e:
                 print(
                     f"###### ValueError Error!!! in ast.FunctionDef {str(func_def)}.\n{str(e)}")
+                continue
+            except MinerPyError as e:
+                print(
+                    f"###### Error!!! in ast.FunctionDef {str(func_def)}.\n{str(e)}")
                 continue
 
         return generated
@@ -135,15 +143,15 @@ class ExceptDatasetGenerator:
         if not isinstance(node.text, bytes):
             raise TreeSitterNodeException("node.text is not bytes")
 
-        try:
-            self.slices = get_try_slices(node)
-        except TryNotFoundException:
-            return None
+        self.slices = get_try_slices(node)
 
         if self.slices is None or len(self.slices.handlers) == 0:
-            return None
+            raise TryNotFoundException("try-except slices not found")
 
         self.except_lines = [[] for _ in range(len(self.slices.handlers))]
+
+        if (len(self.except_lines) == 0):
+            raise MinerPyError('No exceptions found')
 
         for token_info in tokenize.generate_tokens(io.StringIO(node.text.decode("utf-8")).readline):
             if token_info.start[0] != self.current_lineno:

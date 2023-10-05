@@ -51,17 +51,17 @@ def save_task2_onmt(dataframe: pd.DataFrame):
 
     os.makedirs('output/py/data/task2', exist_ok=True)
 
-    with open('output/py/data/task2/src-train.txt', 'a') as writer:
+    with open('output/py/data/task2/src-train.txt', 'w') as writer:
         writer.writelines([''.join(line) + '\n' for line in train['try']])
-    with open('output/py/data/task2/tgt-train.txt', 'a') as writer:
+    with open('output/py/data/task2/tgt-train.txt', 'w') as writer:
         writer.writelines([''.join(line) + '\n' for line in train['except']])
-    with open('output/py/data/task2/src-valid.txt', 'a') as writer:
+    with open('output/py/data/task2/src-valid.txt', 'w') as writer:
         writer.writelines([''.join(line) + '\n' for line in valid['try']])
-    with open('output/py/data/task2/tgt-valid.txt', 'a') as writer:
+    with open('output/py/data/task2/tgt-valid.txt', 'w') as writer:
         writer.writelines([''.join(line) + '\n' for line in valid['except']])
-    with open('output/py/data/task2/src-test.txt', 'a') as writer:
+    with open('output/py/data/task2/src-test.txt', 'w') as writer:
         writer.writelines([''.join(line) + '\n' for line in test['try']])
-    with open('output/py/data/task2/tgt-test.txt', 'a') as writer:
+    with open('output/py/data/task2/tgt-test.txt', 'w') as writer:
         writer.writelines([''.join(line) + '\n' for line in test['except']])
 
 
