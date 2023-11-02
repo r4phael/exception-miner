@@ -545,3 +545,7 @@ jupyterhub,jupyterhub,https://github.com/jupyterhub/jupyterhub,github
 qubvel,segmentation_models.pytorch,https://github.com/qubvel/segmentation_models.pytorch,github
 facebookresearch,hydra,https://github.com/facebookresearch/hydra,github
 jack-cherish,pythonpark,https://github.com/jack-cherish/pythonpark,github
+jiaaro,pydub,https://github.com/jiaaro/pydub,github
+geerlingguy,ansible-for-devops,https://github.com/geerlingguy/ansible-for-devops,github
+automl,auto-sklearn,https://github.com/automl/auto-sklearn,github
+houtianze,bypy,https://github.com/houtianze/bypy,github
