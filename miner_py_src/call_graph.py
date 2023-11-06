@@ -8,7 +8,7 @@ from tqdm import tqdm
 from miner_py_src.exceptions import CallGraphError
 
 
-def generate_cfg(project_name, project_folder):
+def generate_cfg(project_name, project_folder, files=[]):
     current_path = os.getcwd()
     os.makedirs(
         f'{current_path}/output/call_graph/{project_name}', exist_ok=True)
@@ -23,12 +23,16 @@ def generate_cfg(project_name, project_folder):
 
     #python_src_files = project_src_base
 
-    python_src_files = [os.path.abspath(x)
-                        for x in glob.iglob("./**/*.py", recursive=True)
-                        if os.path.isfile(x)]
+    if len(files) > 0:
+        python_src_files = files
 
-    if len(python_src_files) == 0:
-        raise CallGraphError("No python files found")
+    else:
+        python_src_files = [os.path.abspath(x)
+                            for x in glob.iglob("./**/*.py", recursive=True)
+                            if os.path.isfile(x)]
+
+        if len(python_src_files) == 0:
+            raise CallGraphError("No python files found")
 
     tqdm.write(f'found {len(python_src_files)} files')
     tqdm.write('Running PyCG...')
