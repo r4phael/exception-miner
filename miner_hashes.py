@@ -2,14 +2,12 @@ import os
 import pathlib
 import re
 import subprocess
+import pandas as pd
+
 from subprocess import call
 from typing import List
-
-import pandas as pd
 from tqdm import tqdm
 from pydriller import Repository, Git
-
-
 from urllib.parse import urlparse
 
 from miner_py_src.call_graph import CFG, generate_cfg
@@ -181,13 +179,14 @@ def __get_method_name(node):  # -> str | None:
             return child.text.decode("utf-8")
 
 
-def collect_parser(files, project_name, hash_name):
+def collect_parser(files, project_name, hash_name, url_issue, repo_url):
 
     df = pd.DataFrame(
-        columns=["file", "function", "func_body", "str_uncaught_exceptions", "n_try_except", "n_try_pass", "n_finally",
-                 "n_generic_except", "n_raise", "n_captures_broad_raise", "n_captures_try_except_raise", "n_captures_misplaced_bare_raise",
-                 "n_try_else", "n_try_return", "str_except_identifiers", "str_raise_identifiers", "str_except_block", "n_nested_try", 
-                 "n_bare_except", "n_bare_raise_finally"]
+        columns=["file", "function", "func_body", "project", "commit_fix", "repo_url", "url_issue", "str_uncaught_exceptions",
+                 "n_try_except", "n_try_pass", "n_finally", "n_generic_except", "n_raise", "n_captures_broad_raise",
+                 "n_captures_try_except_raise", "n_captures_misplaced_bare_raise", "n_try_else", "n_try_return",
+                 "str_except_identifiers", "str_raise_identifiers", "str_except_block", "n_nested_try", "n_bare_except",
+                 "n_bare_raise_finally"]
     )
 
     file_stats = FileStats()
@@ -196,14 +195,20 @@ def collect_parser(files, project_name, hash_name):
     for file_path in pbar:
         pbar.set_description(f"Processing {str(file_path)[-40:].ljust(40)}")
 
-        with open(file_path, "rb") as file:
-            try:
-                content = file.read()
-            except UnicodeDecodeError as ex:
-                tqdm.write(
-                    f"###### UnicodeDecodeError Error!!! file: {file_path}.\n{str(ex)}"
-                )
-                continue
+        try:
+            with open(file_path, "rb") as file:
+                try:
+                    content = file.read()
+                except UnicodeDecodeError as ex:
+                    tqdm.write(
+                        f"###### UnicodeDecodeError Error!!! file: {file_path}.\n{str(ex)}"
+                    )
+                    continue
+        except FileNotFoundError as ex:
+            tqdm.write(
+                f"###### UnicodeDecodeError Error!!! file: {file_path}.\n{str(ex)}"
+            )
+        
         try:
             tree = tree_sitter_parser.parse(content)
         except SyntaxError as ex:
@@ -227,9 +232,13 @@ def collect_parser(files, project_name, hash_name):
                             [{
                                 "file": file_path,
                                 "function": __get_method_name(child),
+                                "project": project_name,
+                                "commit_fix": hash_name,
+                                "repo_url": repo_url,
+                                "url_issue": url_issue,
                                 "func_body": child.text.decode("utf-8"),
                                 'str_uncaught_exceptions': '',
-                                **metrics                                
+                                **metrics
                             }],
                             columns=df.columns,
                         ),
@@ -330,7 +339,7 @@ if __name__ == "__main__":
             repo_url, project_name = extract_project_info(row['url_issue'])
             files = fetch_repositories(repo_url, project_name, row['hash'])
             if len(files) > 0:
-                collect_parser(files, project_name, row['hash'])
+                collect_parser(files, project_name, row['hash'], row['url_issue'], repo_url)
             else:
                 continue
         else:
