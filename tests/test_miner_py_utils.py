@@ -149,6 +149,7 @@ def teste_nested_try_except():
 
         self.assertEquals(actual_check, 1)
 
+
 class TestCountLines(unittest.TestCase):
     def test_count_lines_multiple_function_defs(self):
         tree = parser.parse(b'''

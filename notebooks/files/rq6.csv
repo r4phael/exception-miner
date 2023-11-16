@@ -1,0 +1,12 @@
+,fix_grp,Bare Except Catch Block,Bare Raise Block,Bare except,Broad exception caught,Swallowing Exceptions,Too Broad Except,Try and Return,lost-exception,too-many-nested-blocks
+0,Change exception handling block,,,1.0,1.0,,,,,1.0
+1,Change the message error,,2.0,,,,,,,
+2,Change the the exception code logic,,1.0,,,,1.0,,,
+3,Fix API version,,,2.0,1.0,,,,,
+4,Handle a exception,,2.0,2.0,1.0,8.0,6.0,,,1.0
+5,Improve raising conditions,1.0,8.0,,,1.0,5.0,,,
+6,Improve the Finally Mechanism,,,,,,2.0,,,
+7,Improve the exception handling block,4.0,20.0,16.0,15.0,12.0,18.0,2.0,1.0,6.0
+8,Improve the message error,,,,,,2.0,,,
+9,Re-raise a exception,,,,2.0,,,,,1.0
+10,Use exception handling mechanism to change the logic,,2.0,,,,,,,

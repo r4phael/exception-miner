@@ -1,0 +1,72 @@
+symptom,adj,map,grp
+Error in Logic,Error in Logic,Incorrect Logic,Incorrect Logic
+Badly defined arguments,Badly defined arguments,Incorrect Logic,Incorrect Logic
+Unhandled Exception,Unhandled Exception,Unhandled Exception,Unhandled Exception
+Missing Raising Condition,Missing Raising Condition,Missing Raising Condition,Improper Raising
+Re-raising exception,Re-raising exception,Re-raising exception,Re-raising exception
+Improper Handling,Improper Handling,Improper Handling,Improper Exception Handling
+Wrong exception type,Wrong exception type,Wrong Exception Type,Improper Exception Handling
+API Mismatch,API Mismatch,API Mismatch,API Misuse
+API Mismatch,API Mismatch,API Mismatch,API Misuse
+Unproper Message Error,Unproper Message Error,Unproper Message,Unproper Message
+Incorrect logic leading to raise a execption,Incorrect logic leading to raise a execption,Incorrect Logic,Incorrect Logic
+Incorrect code logic,Incorrect code logic,Incorrect Logic,Incorrect Logic
+Bad Exception Handling Logic,Bad Exception Handling Logic,Incorrect Logic,Incorrect Logic
+No Exception Handling,No Exception Handling,Unhandled Exception,Unhandled Exception
+and Unproper Message Error,and Unproper Message Error,Unproper Message,Unproper Message
+Missing exception type,Missing exception type,Missing Exception Type,Improper Exception Handling
+Unexpected Raising,Unexpected Raising,Unexpected Raising,Improper Raising
+Unproper exception handling,Unproper exception handling,Unhandled Exception,Unhandled Exception
+Aplication Crashing,Aplication Crashing,Unhandled Exception,Unhandled Exception
+Error in logic,Error in logic,Incorrect Logic,Incorrect Logic
+"Improper Handling
+",Improper Handling,Improper Handling,Improper Handling
+Improper handling,Improper handling,Improper Handling,Improper Handling
+Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong Exception Type,Wrong Exception Type
+"Missing Raising
+ Condition",Missing Raising Condition,Missing Raising Condition,Improper Raising
+"Unproper Message
+Error Due to
+Unhandled 
+Exception",Unproper MessageError Due toUnhandled Exception,Unproper Message,Unproper Message
+Unhandled Error,Unhandled Error,Unhandled Exception,Unhandled Exception
+Missing finally,Missing finally,Missing Finally,Improper Finally Mechanism
+Exception handled incorrectly,Exception handled incorrectly,Exception handled incorrectly,Unhandled Exception
+Wrong Assertion,Wrong Assertion,Incorrect Exceptional Logic,Improper Exception Handling
+Lib conflict,Lib conflict,Import error ,Unhandled Exception
+Additional Unhandled Exception,Additional Unhandled Exception,PermissionError Not exist in python2.7,Python 2/3 Incompatibility Errors
+String manipulation issue,String manipulation issue,String Manipulating/Formating Issues,Incorrect Logic
+Unicode string error,Unicode string error,String Manipulating/Formating Issues,Incorrect Logic
+Unparsable indent source unhandled,Unparsable indent source unhandled,Unhandled Exception,Unhandled Exception
+String formatting issue,String formatting issue,String Manipulating/Formating Issues,Incorrect Logic
+Unexpected network condition,Unexpected network condition,Network Conditions,Unhandled Exception
+Indentation block,Indentation block,Identation Python 2,Python 2/3 Incompatibility Errors
+Relative path handling,Relative path handling,Error in Logic,Incorrect Logic
+Unespected behaviour on race condition,Unespected behaviour on race condition,Race Conditions,Incorrect Logic
+Import issues,Import issues,Import error,Unhandled Exception
+Improper exception handling block,Improper exception handling block,Improper exception handling block,Improper Exception Handling
+Wrong error raised,Wrong error raised,Wrong Raise Type,Improper Exception Handling
+Wrong variable logged,Wrong variable logged,Unproper Message Error,Unproper Message
+Unhandled exception,Unhandled exception,Unhandled Exception,Unhandled Exception
+Missing value check,Missing value check,Incorrect Checks,Incorrect Logic
+Improper Handling by swallowing exception,Improper Handling by swallowing exception,Improper Handling,Improper Exception Handling
+Unhandled exception on finally block,Unhandled exception on finally block,Unhandled Exception on Finally Block,Improper Finally Mechanism
+API Misuse,API Misuse,API Misuse,API Misuse
+Exception raised,Exception raised,Incorrect Raising,Improper Raising
+Import error,Import error,Import error ,Unhandled Exception
+Improper raise,Improper raise,Improper Raising,Improper Raising
+MIssing variable check,MIssing variable check,Incorrect Checks,Incorrect Logic
+Wrong API call,Wrong API call,Unhandled Exception,Unhandled Exception
+String formatting error,String formatting error,String Manipulating/Formating Issues,Incorrect Logic
+Missing error type check,Missing error type check,Incorrect Checks,Incorrect Logic
+Finally block execution error,Finally block execution error,Finally Should not Exists,Improper Finally Mechanism
+Missing return value,Missing return value,Missing Return Value,Incorrect Logic
+Parse error,Parse error,Parse error,Incorrect Logic
+Missing method,Missing method,Error in Logic,Incorrect Logic
+Generic raise,Generic raise,Wrong Exception Type,Improper Exception Handling
+Type error on raise expression,Type error on raise expression,Improper Raising,Improper Raising
+Permission error,Permission error,Parse error,Unhandled Exception
+Method called before variable check,Method called before variable check,Incorrect Checks in Code,Incorrect Logic
+Missing raise keyword,Missing raise keyword,Missing Raising Condition,Improper Raising
+Loop problem,Loop problem,Error in Logic,Incorrect Logic
+Cast error,Cast error,Unhandled Exception,Unhandled Exception

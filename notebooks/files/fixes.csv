@@ -1,0 +1,122 @@
+fix,fix_adj
+Remove the exception handling mechanism,Remove the exception handling mechanism
+Handling error messages for invalid arguments,Handling error messages for invalid arguments
+Add a exception handling block,Add a exception handling block
+mover o tratamento de exceçãopara  outro lugar,mover o tratamento de exceçãopara  outro lugar
+Add a exception handling block / Raise a exception,Add a exception handling block / Raise a exception
+Raise a exception,Raise a exception
+Handle a exception,Handle a exception
+ Add a exception handling block,Add a exception handling block
+Change the exception type,Change the exception type
+Change to a specific exception.,Change to a specific exception.
+Change to apropriated exception type,Change to apropriated exception type
+Change the exception tests assertions,Change the exception tests assertions
+Raise a error,Raise a error
+Raise a exception,Raise a exception
+Change to a specific exceptio,Change to a specific exceptio
+Raise an error,Raise an error
+Change the message error,Change the message error
+Use exception handling mechanism to change the logic,Use exception handling mechanism to change the logic
+improvement in error message,improvement in error message
+improvement in code logic and error message,improvement in code logic and error message
+Improvement Exception Handling,Improvement Exception Handling
+Add Exception Handling,Add Exception Handling
+Add apropriated exception type,Add apropriated exception type
+ and Change the message error,and Change the message error
+Add the exception type,Add the exception type
+Add an apropriated exception handling block,Add an apropriated exception handling block
+Change to a specific exception,Change to a specific exception
+Re-raise a exception,Re-raise a exception
+Refactor the exception handling block,Refactor the exception handling block
+Raise a specific exception,Raise a specific exception
+Removed exception raise,Removed exception raise
+Refactor code and add a exception handling block,Refactor code and add a exception handling block
+Handle the exception and re-raise it.,Handle the exception and re-raise it.
+Refactor the logic,Refactor the logic
+Move the exception handling block to another part,Move the exception handling block to another part
+"Use exception
+handling
+ mechanism to
+ change the logic",Use exceptionhandling mechanism to change the logic
+"Import with a exception handling code
+",Import with a exception handling code
+"Improve and
+move the
+exception 
+handling block
+to another part",Improve andmove theexception handling blockto another part
+"Add a exception
+ handling block",Add a exception handling block
+"Handle a 
+exception",Handle a exception
+"Handle the 
+exception and 
+re-raise it.",Handle the exception and re-raise it.
+"Add a raising 
+condition.",Add a raising condition.
+Raise a exception.,Raise a exception.
+Raise a Error,Raise a Error
+"Add a exception
+ handling block
+",Add a exception handling block
+"Change to a 
+specific 
+exception
+and change the
+ message error
+
+",Change to a specific exceptionand change the message error
+"Add a exception 
+handling block
+ and Handle 
+exceptions
+",Add a exception handling block and Handle exceptions
+"Add a raising
+ condition.",Add a raising condition.
+"Add a raising 
+condition and 
+raise 
+ error",Add a raising condition and raise  error
+Add type checking code,Add type checking code
+Add a exception,Add a exception
+Add finally,Add finally
+Fix issue,Fix issue
+Fix exception handling,Fix exception handling
+Add a raising condition,Add a raising condition
+Remove raise,Remove raise
+Handle a Exception,Handle a Exception
+Add a Exception Handling Block,Add a Exception Handling Block
+Import with a exception handling code.,Import with a exception handling code.
+Fix the message error parameter,Fix the message error parameter
+Fix lib version check,Fix lib version check
+Add another except block,Add another except block
+Handle exception and raise StopIteration,Handle exception and raise StopIteration
+Fix logic,Fix logic
+Fix string formatting,Fix string formatting
+Remove indentation,Remove indentation
+Move raise expression to another location,Move raise expression to another location
+Change exception to generic,Change exception to generic
+Fix exception handling block,Fix exception handling block
+Change error type,Change error type
+Fix raise message,Fix raise message
+Add a raise expression,Add a raise expression
+Fix handling block,Fix handling block
+Add if check,Add if check
+Change exception type,Change exception type
+Remove exception handling,Remove exception handling
+Remove raise statement,Remove raise statement
+Fix the message raised,Fix the message raised
+Add try pass,Add try pass
+Fix raise,Fix raise
+Fix API call and add a exception handling block,Fix API call and add a exception handling block
+Check value before the exception handling block,Check value before the exception handling block
+Wrap str() call,Wrap str() call
+Fix if check,Fix if check
+Remove finally block,Remove finally block
+Add return value,Add return value
+Remove the error message,Remove the error message
+Change raise type to specific,Change raise type to specific
+Fix raise expression,Fix raise expression
+Refactor code,Refactor code
+Add raise keyword,Add raise keyword
+Add continue keyword on except block,Add continue keyword on except block

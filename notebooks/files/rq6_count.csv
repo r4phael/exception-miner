@@ -1,0 +1,10 @@
+,v_anti_pattern_modif_name,Count
+1,Bare Raise Block,35
+5,Too Broad Except,34
+2,Bare except,21
+4,Swallowing Exceptions,21
+3,Broad exception caught,20
+8,too-many-nested-blocks,9
+0,Bare Except Catch Block,5
+6,Try and Return,2
+7,lost-exception,1

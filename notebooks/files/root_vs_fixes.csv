@@ -1,0 +1,15 @@
+fix_grp,API Misuse,Improper Exception Handling,Improper Finally Mechanism,Improper Handling,Improper Raising,Incorrect Logic,Python 2/3 Incompatibility Errors,Re-raising exception,Unhandled Exception,Unproper Message,Wrong Exception Type
+Change exception handling block,,,,,,33.33,,,66.67,,
+Change the message error,,,,,,9.09,,,,90.91,
+Change the the exception code logic,,,,,,100.0,,,,,
+Fix API version,,,,,,,,,100.0,,
+Handle a exception,,4.35,,23.91,8.7,13.04,,2.17,45.65,2.17,
+Import with a exception handling code,50.0,,,,,,,,50.0,,
+Improve  the exception handling block,,,,,,100.0,,,,,
+Improve raising conditions,2.27,2.27,,11.36,39.77,20.45,,3.41,15.91,4.55,
+Improve the Finally Mechanism,,,100.0,,,,,,,,
+Improve the exception handling block,1.64,2.3,,25.57,6.89,14.75,0.33,1.97,43.93,1.97,0.66
+Improve the message error,,,,,,10.0,,,,90.0,
+Re-raise a exception,,,,40.0,20.0,,,,30.0,10.0,
+Use exception handling mechanism to change the logic,,,12.5,12.5,,62.5,,,12.5,,
+Workaround to fix Python 2/3 incompatibility errors,,,,,,,100.0,,,,

@@ -1,0 +1,72 @@
+root_cause,root_cause_adj
+Error in Logic,Error in Logic
+Badly defined arguments,Badly defined arguments
+Unhandled Exception,Unhandled Exception
+Missing Raising Condition,Missing Raising Condition
+Re-raising exception,Re-raising exception
+Improper Handling,Improper Handling
+Wrong exception type,Wrong exception type
+ API Mismatch,API Mismatch
+API Mismatch,API Mismatch
+Unproper Message Error,Unproper Message Error
+Incorrect logic leading to raise a execption,Incorrect logic leading to raise a execption
+Incorrect code logic,Incorrect code logic
+Bad Exception Handling Logic,Bad Exception Handling Logic
+No Exception Handling,No Exception Handling
+ and Unproper Message Error,and Unproper Message Error
+Missing exception type,Missing exception type
+Unexpected Raising,Unexpected Raising
+Unproper exception handling,Unproper exception handling
+Aplication Crashing,Aplication Crashing
+Error in logic,Error in logic
+"Improper Handling
+",Improper Handling
+Improper handling,Improper handling
+Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong exception type e Unproper Message Error (Utilizava Generic Exception)
+"Missing Raising
+ Condition",Missing Raising Condition
+"Unproper Message
+Error Due to
+Unhandled 
+Exception",Unproper MessageError Due toUnhandled Exception
+Unhandled Error,Unhandled Error
+Missing finally,Missing finally
+Exception handled incorrectly,Exception handled incorrectly
+Wrong Assertion,Wrong Assertion
+Lib conflict,Lib conflict
+Additional Unhandled Exception,Additional Unhandled Exception
+String manipulation issue,String manipulation issue
+Unicode string error,Unicode string error
+Unparsable indent source unhandled,Unparsable indent source unhandled
+String formatting issue,String formatting issue
+Unexpected network condition,Unexpected network condition
+Indentation block,Indentation block
+Relative path handling,Relative path handling
+Unespected behaviour on race condition,Unespected behaviour on race condition
+Import issues,Import issues
+Improper exception handling block,Improper exception handling block
+Wrong error raised,Wrong error raised
+Wrong variable logged,Wrong variable logged
+Unhandled exception,Unhandled exception
+Missing value check,Missing value check
+Improper Handling by swallowing exception,Improper Handling by swallowing exception
+Unhandled exception on finally block,Unhandled exception on finally block
+API Misuse,API Misuse
+Exception raised,Exception raised
+Import error ,Import error
+Improper raise,Improper raise
+MIssing variable check,MIssing variable check
+Wrong API call,Wrong API call
+String formatting error,String formatting error
+Missing error type check,Missing error type check
+Finally block execution error,Finally block execution error
+Missing return value,Missing return value
+Parse error,Parse error
+Missing method,Missing method
+Generic raise,Generic raise
+Type error on raise expression,Type error on raise expression
+Permission error,Permission error
+Method called before variable check,Method called before variable check
+Missing raise keyword,Missing raise keyword
+Loop problem,Loop problem
+Cast error,Cast error

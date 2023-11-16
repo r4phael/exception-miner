@@ -1,0 +1,44 @@
+symptom,adj,map,grp
+Aplication Crashing,Aplication Crashing,Aplication Crashing,Aplication Crashing
+Invalid Arguments,Invalid Arguments,Error in Logic,Error in Logic
+Exceptional error,Exceptional error,Exceptional Error,Exceptional Error
+DatetimeIndex error,DatetimeIndex error,Exceptional Error,Exceptional Error
+Exception trigger,Exception trigger,Exceptional Error,Exceptional Error
+Performance,Performance,Performance,Performance
+Improper Logic,Improper Logic,Error in Logic,Error in Logic
+Incorrect Logic,Incorrect Logic,Error in Logic,Error in Logic
+Application Crashing,Application Crashing,Aplication Crashing,Aplication Crashing
+Application Crashing,Application Crashing,Aplication Crashing,Aplication Crashing
+Incorrect Messaging,Incorrect Messaging,Incorrect Messaging,Incorrect Messaging
+Erros in CI,Erros in CI,Erros in CI,Erros in CI
+Exceptional Compilation Error,Exceptional Compilation Error,Compilation Error,Compilation Error
+Compiler error,Compiler error,Compilation Error,Compilation Error
+Aplication compatability,Aplication compatability,Exceptional Error,Exceptional Error
+Database Error,Database Error,Database Error,Others
+Pylint Errors,Pylint Errors,Erros in CI,Erros in CI
+Change the message error,Change the message error,Incorrect Messaging,Incorrect Messaging
+Functional error,Functional error,Exceptional Error,Exceptional Error
+Incorrect logic,Incorrect logic,Error in Logic,Error in Logic
+Application crash,Application crash,Aplication Crashing,Aplication Crashing
+Logic error,Logic error,Error in Logic,Error in Logic
+Incorrect error message,Incorrect error message,Incorrect Messaging,Incorrect Messaging
+"
+Exceptional Error (Import failure)",Exceptional Error (Import failure),Exceptional Error,Exceptional Error
+"Exceptional error
+",Exceptional error,Exceptional Error,Exceptional Error
+,,Exceptional Error,Exceptional Error
+"
+Redundancy in exception handling",Redundancy in exception handling,Exceptional Error,Exceptional Error
+Exception Error,Exception Error,Exceptional Error,Exceptional Error
+Exceptional Error,Exceptional Error,Exceptional Error,Exceptional Error
+application crashing,application crashing,Aplication Crashing,Aplication Crashing
+Exceptional  Error,Exceptional  Error,Exceptional Error,Exceptional Error
+exceptional Error,exceptional Error,Exceptional Error,Exceptional Error
+Partial import error,Partial import error,Exceptional Error,Exceptional Error
+Exception leak,Exception leak,Exceptional Error,Exceptional Error
+Application crashing,Application crashing,Aplication Crashing,Aplication Crashing
+Improper behavior,Improper behavior,Error in Logic,Error in Logic
+Unexpected error,Unexpected error,Exceptional Error,Exceptional Error
+Generic raise,Generic raise,Exceptional Error,Exceptional Error
+UI Componenents not Loaded,UI Componenents not Loaded,UI Componenents not Loaded,Others
+Deadlock,Deadlock,Deadlock,Others
