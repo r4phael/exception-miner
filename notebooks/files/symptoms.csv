@@ -1,0 +1,10 @@
+,symptom_map,Count,Percentage
+0,Aplication Crashing,65,7.523148148148148
+1,Compilation Error,3,0.3472222222222222
+2,Database Error,1,0.11574074074074073
+3,Error in Logic,113,13.078703703703704
+4,Erros in CI,11,1.2731481481481481
+5,Exceptional Error,532,61.57407407407407
+6,Incorrect Messaging,44,5.092592592592593
+7,Performance,4,0.4629629629629629
+8,UI Componenents not Loaded,1,0.11574074074074073

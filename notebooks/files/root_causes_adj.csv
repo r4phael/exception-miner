@@ -1,4 +1,4 @@
-symptom,adj,map,grp
+root_cause,adj,map,grp
 Error in Logic,Error in Logic,Incorrect Logic,Incorrect Logic
 Badly defined arguments,Badly defined arguments,Incorrect Logic,Incorrect Logic
 Unhandled Exception,Unhandled Exception,Unhandled Exception,Unhandled Exception
@@ -20,9 +20,9 @@ Unproper exception handling,Unproper exception handling,Unhandled Exception,Unha
 Aplication Crashing,Aplication Crashing,Unhandled Exception,Unhandled Exception
 Error in logic,Error in logic,Incorrect Logic,Incorrect Logic
 "Improper Handling
-",Improper Handling,Improper Handling,Improper Handling
-Improper handling,Improper handling,Improper Handling,Improper Handling
-Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong Exception Type,Wrong Exception Type
+",Improper Handling,Improper Handling,Improper Exception Handling
+Improper handling,Improper handling,Improper Handling,Improper Exception Handling
+Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong Exception Type,Improper Exception Handling
 "Missing Raising
  Condition",Missing Raising Condition,Missing Raising Condition,Improper Raising
 "Unproper Message

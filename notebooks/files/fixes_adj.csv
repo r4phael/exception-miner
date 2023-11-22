@@ -30,7 +30,7 @@ Re-raise a exception,Re-raise a exception,Re-raise a exception,Re-raise a except
 Refactor the exception handling block,Refactor the exception handling block,Refactor the exception handling block,Improve the exception handling block
 Raise a specific exception,Raise a specific exception,Raise to a specific exception,Improve raising conditions
 Removed exception raise,Removed exception raise,Remove raise statement,Improve raising conditions
-Refactor code and add a exception handling block,Refactor code and add a exception handling block,Refactor code and add a exception handling block,Improve  the exception handling block
+Refactor code and add a exception handling block,Refactor code and add a exception handling block,Refactor code and add a exception handling block,Improve the exception handling block
 Handle the exception and re-raise it.,Handle the exception and re-raise it.,Handle a exception and re-raise it,Re-raise a exception
 Refactor the logic,Refactor the logic,Change the logic error,Change the the exception code logic
 Move the exception handling block to another part,Move the exception handling block to another part,Move the exception handling block to another part,Improve the exception handling block
@@ -77,46 +77,46 @@ exceptions
 condition and 
 raise 
  error",Add a raising condition and raise  error,Add a raise condition,Improve raising conditions
-Add type checking code,Add type checking code,Add type checking in the code,Use exception handling mechanism to change the logic
+Add type checking code,Add type checking code,Add type checking in the code,Change the the exception code logic
 Add a exception,Add a exception,Add a exception handling block,Improve the exception handling block
 Add finally,Add finally,Add finally,Improve the Finally Mechanism
-Fix issue,Fix issue,Fix issue,Use exception handling mechanism to change the logic
+Fix issue,Fix issue,Fix issue,Change the the exception code logic
 Fix exception handling,Fix exception handling,Fix exception handling block,Improve the exception handling block
 Add a raising condition,Add a raising condition,Add a raise condition,Improve raising conditions
 Remove raise,Remove raise,Remove raise statement,Improve raising conditions
-Handle a Exception,Handle a Exception,Handle a Exception,Improve the exception handling block
+Handle a Exception,Handle a Exception,Handle a Exception,Handle a exception
 Add a Exception Handling Block,Add a Exception Handling Block,Add a Exception Handling Block,Improve the exception handling block
 Import with a exception handling code.,Import with a exception handling code.,Import with a exception handling code,Import with a exception handling code
-Fix the message error parameter,Fix the message error parameter,Change the message error,Change the message error
+Fix the message error parameter,Fix the message error parameter,Change the message error,Improve the message error
 Fix lib version check,Fix lib version check,Fix lib version check,Fix API version
 Add another except block,Add another except block,Add an apropriated exception handling block,Improve the exception handling block
 Handle exception and raise StopIteration,Handle exception and raise StopIteration,Handle a exception and add a raise,Improve the exception handling block
-Fix logic,Fix logic,Change the logic error,Use exception handling mechanism to change the logic
-Fix string formatting,Fix string formatting,Change the logic error,Use exception handling mechanism to change the logic
+Fix logic,Fix logic,Change the logic error,Change the the exception code logic
+Fix string formatting,Fix string formatting,Change the logic error,Change the the exception code logic
 Remove indentation,Remove indentation,Remove indentation,Workaround to fix Python 2/3 incompatibility errors
 Move raise expression to another location,Move raise expression to another location,Move the raise expression to another part,Improve raising conditions
-Change exception to generic,Change exception to generic,Change exception to generic,Change exception handling block
+Change exception to generic,Change exception to generic,Change exception to generic,Improve the exception handling block
 Fix exception handling block,Fix exception handling block,Fix exception handling block,Improve the exception handling block
 Change error type,Change error type,Change exception type,Improve the exception handling block
-Fix raise message,Fix raise message,Change the message error,Change the message error
+Fix raise message,Fix raise message,Change the message error,Improve the message error
 Add a raise expression,Add a raise expression,Add a raise condition,Improve raising conditions
 Fix handling block,Fix handling block,Fix exception handling block,Improve the exception handling block
-Add if check,Add if check,Add if check,Use exception handling mechanism to change the logic
+Add if check,Add if check,Add if check,Change the the exception code logic
 Change exception type,Change exception type,Change exception type,Improve the exception handling block
 Remove exception handling,Remove exception handling,Remove exception handling code,Improve the exception handling block
 Remove raise statement,Remove raise statement,Remove raise statement,Improve raising conditions
-Fix the message raised,Fix the message raised,Change the message error,Change the message error
-Add try pass,Add try pass,Add try pass,Change exception handling block
+Fix the message raised,Fix the message raised,Change the message error,Improve the message error
+Add try pass,Add try pass,Add try pass,Improve the exception handling block
 Fix raise,Fix raise,Fix raise expression,Improve raising conditions
 Fix API call and add a exception handling block,Fix API call and add a exception handling block,Fix API call and add a exception handling block,Fix API version
 Check value before the exception handling block,Check value before the exception handling block,Check value before the exception handling block,Improve the exception handling block
-Wrap str() call,Wrap str() call,Change the logic error,Use exception handling mechanism to change the logic
-Fix if check,Fix if check,Fix check conditions,Use exception handling mechanism to change the logic
+Wrap str() call,Wrap str() call,Change the logic error,Change the the exception code logic
+Fix if check,Fix if check,Fix check conditions,Change the the exception code logic
 Remove finally block,Remove finally block,Remove finally block,Improve the Finally Mechanism
-Add return value,Add return value,Add return value,Use exception handling mechanism to change the logic
-Remove the error message,Remove the error message,Remove the error message,Change the message error
+Add return value,Add return value,Add return value,Change the the exception code logic
+Remove the error message,Remove the error message,Remove the error message,Improve the message error
 Change raise type to specific,Change raise type to specific,Change raise type to specific,Improve raising conditions
 Fix raise expression,Fix raise expression,Fix raise expression,Improve raising conditions
 Refactor code,Refactor code,Improve  the exception handling block,Improve the exception handling block
 Add raise keyword,Add raise keyword,Add a raise condition,Improve raising conditions
-Add continue keyword on except block,Add continue keyword on except block,Add continue keyword on except block,Change exception handling block
+Add continue keyword on except block,Add continue keyword on except block,Add continue keyword on except block,Improve the exception handling block

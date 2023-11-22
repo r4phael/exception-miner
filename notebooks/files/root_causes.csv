@@ -1,4 +1,5 @@
 root_cause,root_cause_adj
+,
 Error in Logic,Error in Logic
 Badly defined arguments,Badly defined arguments
 Unhandled Exception,Unhandled Exception
@@ -15,12 +16,14 @@ Bad Exception Handling Logic,Bad Exception Handling Logic
 No Exception Handling,No Exception Handling
  and Unproper Message Error,and Unproper Message Error
 Missing exception type,Missing exception type
+-,-
 Unexpected Raising,Unexpected Raising
 Unproper exception handling,Unproper exception handling
 Aplication Crashing,Aplication Crashing
 Error in logic,Error in logic
 "Improper Handling
 ",Improper Handling
+NÃO CONSIGO DETERMINAR A CAUSA,NÃO CONSIGO DETERMINAR A CAUSA
 Improper handling,Improper handling
 Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong exception type e Unproper Message Error (Utilizava Generic Exception)
 "Missing Raising

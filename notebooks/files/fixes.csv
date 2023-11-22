@@ -1,4 +1,5 @@
 fix,fix_adj
+,
 Remove the exception handling mechanism,Remove the exception handling mechanism
 Handling error messages for invalid arguments,Handling error messages for invalid arguments
 Add a exception handling block,Add a exception handling block
@@ -24,6 +25,7 @@ Add Exception Handling,Add Exception Handling
 Add apropriated exception type,Add apropriated exception type
  and Change the message error,and Change the message error
 Add the exception type,Add the exception type
+-,-
 Add an apropriated exception handling block,Add an apropriated exception handling block
 Change to a specific exception,Change to a specific exception
 Re-raise a exception,Re-raise a exception
@@ -47,6 +49,8 @@ handling block
 to another part",Improve andmove theexception handling blockto another part
 "Add a exception
  handling block",Add a exception handling block
+"Change the
+ exception type",Change the exception type
 "Handle a 
 exception",Handle a exception
 "Handle the 

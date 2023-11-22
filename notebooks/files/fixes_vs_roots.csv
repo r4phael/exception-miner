@@ -1,0 +1,10 @@
+root_cause_grp,Change the the exception code logic,Fix API version,Handle a exception,Import with a exception handling code,Improve raising conditions,Improve the Finally Mechanism,Improve the exception handling block,Improve the message error,Re-raise a exception,Workaround to fix Python 2/3 incompatibility errors
+API Misuse,,,,12.5,25.0,,62.5,,,
+Improper Exception Handling,0.85,,11.11,,10.26,,74.36,,3.42,
+Improper Finally Mechanism,33.33,,,,,66.67,,,,
+Improper Raising,,,6.45,,56.45,,33.87,,3.23,
+Incorrect Logic,8.75,,7.5,,22.5,,58.75,2.5,,
+Python 2/3 Incompatibility Errors,,,,,,,50.0,,,50.0
+Re-raising exception,,,10.0,,30.0,,60.0,,,
+Unhandled Exception,0.56,1.12,12.36,0.56,7.87,,75.84,,1.69,
+Unproper Message,,,3.23,,12.9,,19.35,61.29,3.23,

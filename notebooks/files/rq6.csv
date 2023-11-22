@@ -1,12 +1,9 @@
-,fix_grp,Bare Except Catch Block,Bare Raise Block,Bare except,Broad exception caught,Swallowing Exceptions,Too Broad Except,Try and Return,lost-exception,too-many-nested-blocks
-0,Change exception handling block,,,1.0,1.0,,,,,1.0
-1,Change the message error,,2.0,,,,,,,
-2,Change the the exception code logic,,1.0,,,,1.0,,,
-3,Fix API version,,,2.0,1.0,,,,,
-4,Handle a exception,,2.0,2.0,1.0,8.0,6.0,,,1.0
-5,Improve raising conditions,1.0,8.0,,,1.0,5.0,,,
-6,Improve the Finally Mechanism,,,,,,2.0,,,
-7,Improve the exception handling block,4.0,20.0,16.0,15.0,12.0,18.0,2.0,1.0,6.0
-8,Improve the message error,,,,,,2.0,,,
-9,Re-raise a exception,,,,2.0,,,,,1.0
-10,Use exception handling mechanism to change the logic,,2.0,,,,,,,
+fix_grp,Bare Except Catch Block,Bare Raise Block,Bare except,Bare raise block,Swallowing Exceptions,Too Broad Except,Try and Return,too-many-nested-blocks
+Change the the exception code logic,,50.0,,,,33.33,,16.67
+Fix API version,,,66.67,,,33.33,,
+Handle a exception,2.5,17.5,7.5,,27.5,37.5,,7.5
+Improve raising conditions,2.33,46.51,9.3,,6.98,32.56,,2.33
+Improve the Finally Mechanism,,,,,,100.0,,
+Improve the exception handling block,4.29,16.31,15.45,1.29,11.16,40.34,0.86,10.3
+Improve the message error,,13.33,13.33,,,46.67,,26.67
+Re-raise a exception,,12.5,,,,75.0,,12.5
