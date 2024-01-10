@@ -1,0 +1,146 @@
+symptom,adj,map,grp
+,Incorrect Exceptions,Incorrect Exceptions,Incorrect Exceptions
+Aplication Crashing,Aplication Crashing,Application Crashing,Application Crashing
+Invalid Arguments,Invalid Arguments,Incorrect Behavior,Incorrect Behavior
+Exceptional error,Exceptional error,Incorrect Exceptions,Incorrect Exceptions
+DatetimeIndex error,DatetimeIndex error,Incorrect Exceptions,Incorrect Exceptions
+Deadlock,Deadlock,Deadlock,Deadlock
+Performance,Performance,Performance,Performance
+Improper Logic,Improper Logic,Incorrect Behavior,Incorrect Behavior
+Incorrect Logic,Incorrect Logic,Incorrect Behavior,Incorrect Behavior
+Application Crashing,Application Crashing,Aplication Crashing,Aplication Crashing
+Application Crashing,Application Crashing,Aplication Crashing,Aplication Crashing
+Incorrect Messaging,Incorrect Messaging,Incorrect Messaging,Incorrect Messaging
+Erros in CI,Erros in CI,Errors in CI,Errors in CI
+Exceptional Compilation Error,Exceptional Compilation Error,Compilation Error,Compilation Error
+Compiler error,Compiler error,Compilation Error,Compilation Error
+Aplication compatability,Aplication compatability,Incorrect Exceptions,Incorrect Exceptions
+Database Error,Database Error,Database Error,Database Error
+Pylint Errors,Pylint Errors,Errors in CI,Errors in CI
+Change the message error,Change the message error,Incorrect Messaging,Incorrect Messaging
+Exceptional Error,Exceptional Error,Incorrect Exceptions,Incorrect Exceptions
+-,-,,
+Incorrect logic,Incorrect logic,Incorrect Behavior,Incorrect Behavior
+UI Componenents not Loaded,UI Componenents not Loaded,UI Componenents not Loaded,UI Componenents not Working Correctly
+Application crash,Application crash,Aplication Crashing,Aplication Crashing
+Logic error,Logic error,Incorrect Behavior,Incorrect Behavior
+Incorrect error message,Incorrect error message,Incorrect Messaging,Incorrect Messaging
+"
+Exceptional Error (Import failure)",Exceptional Error (Import failure),Import Error,Import Error
+"Exceptional error
+",Exceptional error,Incorrect Exceptions,Incorrect Exceptions
+"
+Redundancy in exception handling",Redundancy in exception handling,Incorrect Exceptions,Incorrect Exceptions
+Exception Error,Exception Error,Incorrect Exceptions,Incorrect Exceptions
+application crashing,application crashing,Aplication Crashing,Aplication Crashing
+Exceptional  Error,Exceptional  Error,Incorrect Exceptions,Incorrect Exceptions
+exceptional Error,exceptional Error,Incorrect Exceptions,Incorrect Exceptions
+Partial import error,Partial import error,Import Error,Import Error
+Exception leak,Exception leak,Incorrect Exceptions,Incorrect Exceptions
+Application crashing,Application crashing,Aplication Crashing,Aplication Crashing
+Improper behavior,Improper behavior,Incorrect Behavior,Incorrect Behavior
+Unexpected error,Unexpected error,Incorrect Exceptions,Incorrect Exceptions
+Generic raise,Generic raise,Incorrect Exceptions,Incorrect Exceptions
+Errors in CI,Errors in CI,Errors in CI,Errors in CI
+Incorrect Identation,Incorrect Identation,Incorrect Exceptions,Incorrect Exceptions
+Wrong error raised,Wrong error raised,Incorrect Exceptions,Incorrect Exceptions
+Improper messaging,Improper messaging,Incorrect Messaging,Incorrect Messaging
+Improper logic,Improper logic,Incorrect Behavior,Incorrect Behavior
+Runtime exception,Runtime exception,Incorrect Exceptions,Incorrect Exceptions
+Unhandled exception,Unhandled exception,Incorrect Exceptions,Incorrect Exceptions
+"Exceptional 
+Error",Exceptional Error,Incorrect Exceptions,Incorrect Exceptions
+"Improper Logic
+",Improper Logic,Incorrect Behavior,Incorrect Behavior
+"Aplication 
+Crashing
+",Aplication Crashing,Aplication Crashing,Aplication Crashing
+"Aplication
+ Crashing",Aplication Crashing,Aplication Crashing,Aplication Crashing
+"Aplication 
+Crashing",Aplication Crashing,Aplication Crashing,Aplication Crashing
+"Exceptional error
+ (Wrong API)",Exceptional error (Wrong API),API Change,External API Change
+Incorrect Logic,,Incorrect Behavior,Incorrect Behavior
+,Incorrect Logic,Incorrect Behavior,Incorrect Behavior
+Aplication crashing,Aplication crashing,Aplication Crashing,Aplication Crashing
+"Exceptional 
+error",Exceptional error,Incorrect Exceptions,Incorrect Exceptions
+"Incorrect 
+Messaging
+",Incorrect Messaging,Incorrect Messaging,Incorrect Messaging
+"Improper Logic
+",Improper Logic,Incorrect Behavior,Incorrect Behavior
+"Aplication 
+crashing",Aplication crashing,Aplication Crashing,Aplication Crashing
+"Exceptional
+ Error",Exceptional Error,Incorrect Exceptions,Incorrect Exceptions
+"Exceptional error
+ (Wrong package version)",Exceptional error (Wrong package version),Incorrect Exceptions,Incorrect Exceptions
+"Perfomance
+ ",Perfomance,Perfomance,Perfomance
+"
+Incorrect Logic
+",Incorrect Logic,Incorrect Behavior,Incorrect Behavior
+"Incorrect 
+Messaging 
+(just a 
+spelling error)",Incorrect Messaging (just a spelling error),Incorrect Messaging,Incorrect Messaging
+"Incorrect
+ Messaging
+",Incorrect Messaging,Incorrect Messaging,Incorrect Messaging
+"Incorrect Logic
+",Incorrect Logic,Incorrect Behavior,Incorrect Behavior
+Improper Logic,,Incorrect Behavior,Incorrect Behavior
+Erros in CI,Errors in CI,Errors in CI,Errors in CI
+"Inconsistency
+ Between Modules",Inconsistency Between Modules,Inconsistency Between Modules,Modules Error
+Error in Logic,Error in Logic,Incorrect Behavior,Incorrect Behavior
+"Incorrect Logic
+",Incorrect Logic,Incorrect Behavior,Incorrect Behavior
+"Aplication
+crashing",Aplicationcrashing,Aplication Crashing,Aplication Crashing
+" Error was not
+ thrown",Error was not thrown,Incorrect Exceptions,Incorrect Exceptions
+"Incorrect 
+Logic",Incorrect Logic,Incorrect Behavior,Incorrect Behavior
+incorrect logic,incorrect logic,Incorrect Behavior,Incorrect Behavior
+"Incorrect 
+Messaging
+and Error
+ in Logic
+
+",Incorrect Messagingand Error in Logic,Incorrect Messaging,Incorrect Messaging
+"Exceptional
+Error",ExceptionalError,Incorrect Exceptions,Incorrect Exceptions
+"Unwanted 
+Warning ",Unwanted Warning,Incorrect Exceptions,Incorrect Exceptions
+"Exceptional
+error",Exceptionalerror,Incorrect Exceptions,Incorrect Exceptions
+Api Change,Api Change,API Change,External API Change
+unhandled exception in sqlmap/1.0-dev,unhandled exception in sqlmap/1.0-dev,Incorrect Exceptions,Incorrect Exceptions
+CI? (Tests),CI? (Tests),Errors in CI,Errors in CI
+Installing (?),Installing (?),Errors in CI,Errors in CI
+UI not working correctly,UI not working correctly,UI Componenents not Loaded,UI Componenents not Working Correctly
+Logic?,Logic?,Incorrect Behavior,Incorrect Behavior
+Exceptional Error?,Exceptional Error?,Incorrect Exceptions,Incorrect Exceptions
+Error message,Error message,Incorrect Messaging,Incorrect Messaging
+CI,CI,Errors in CI,Errors in CI
+Behavior,Behavior,Incorrect Behavior,Incorrect Behavior
+Error msg,Error msg,Incorrect Messaging,Incorrect Messaging
+Refactor/API Change,Refactor/API Change,API Change,External API Change
+API Change,API Change,API Change,External API Change
+Crash/Interrupt,Crash/Interrupt,Aplication Crashing,Aplication Crashing
+Message,Message,Incorrect Messaging,Incorrect Messaging
+Exceptional Error (TypeError),Exceptional Error (TypeError),Incorrect Exceptions,Incorrect Exceptions
+CI (rules),CI (rules),Errors in CI,Errors in CI
+Perfomance,Perfomance,Performance,Performance
+Poor Debugging,Poor Debugging,Poor Debugging,Poor Debugging
+Crash,Crash,Aplication Crashing,Aplication Crashing
+Error Message,Error Message,Incorrect Messaging,Incorrect Messaging
+Crash or Blocking (Blocking Plugin),Crash or Blocking (Blocking Plugin),Aplication Crashing,Aplication Crashing
+Ci,Ci,Errors in CI,Errors in CI
+Unproper Message Error,Unproper Message Error,Incorrect Messaging,Incorrect Messaging
+Behavior (No error),Behavior (No error),Incorrect Behavior,Incorrect Behavior
+Initialization,Initialization,Modules/App Init,Modules Error
+Modules not Loaded (Initialization?),Modules not Loaded (Initialization?),Modules/App Init,Modules Error

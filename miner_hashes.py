@@ -126,8 +126,8 @@ def fetch_repositories(repo_url, project_name, hash) -> list[str]:
 
     modified_files = []
 
-    if not os.path.exists("output/fixes"):
-        os.mkdir("output/fixes")
+    if not os.path.exists("output/fixes_2"):
+        os.mkdir("output/fixes_2")
 
     path = os.path.join(os.getcwd(), "projects/fixes", str(project_name))
 
@@ -138,9 +138,13 @@ def fetch_repositories(repo_url, project_name, hash) -> list[str]:
             "Exception Miner: Before init git repo: {}".format(project_name))
 
     # Checkout the project to commit
-    gr = Git(path)
-    gr.checkout(hash)
-
+    try:
+        gr = Git(path)
+        gr.checkout(hash)
+    except Exception:
+        logger.warning(f"Cannot checkout the repositóry with this \nCommit: :{hash}")   
+        return []
+    
     # Initialize the Repository object using PyDriller
     for commit in Repository(path, single=hash).traverse_commits():
         if commit.merge:
@@ -325,14 +329,15 @@ def collect_parser(files, project_name, hash_name, url_issue, repo_url):
     # ]  # and not check_function_has_nested_try(f)    ]
 
     # func_defs_try_pass = [f for f in func_defs if is_try_except_pass(f)]
-    os.makedirs("output/fixes/", exist_ok=True)
+    os.makedirs("output/fixes_2/", exist_ok=True)
     logger.warning(f"Before write to csv: {df.shape}")
-    df.to_csv(f"output/fixes/{project_name}_{hash_name}_stats.csv", index=False)
+    df.to_csv(f"output/fixes_2/{project_name}_{hash_name}_stats.csv", index=False)
 
 
 if __name__ == "__main__":
-    projects = pd.read_csv("hashes.csv", sep=",")
-    hashes_list = find_hashes_in_directory(directory="/home/r4ph/desenv/phd/exception-miner/output/fixes/", file_pattern='test')
+    projects = pd.read_csv("hashes_2.csv", sep=",")
+    hashes_list = find_hashes_in_directory(directory="/home/r4ph/desenv/phd/exception-miner/output/fixes_2/",
+                                           file_pattern='test')
     for index, row in projects.iterrows():
         if row['hash'] not in hashes_list:
             logger.info(f"Collecting Project: {row['url_issue']} and hash : {row['hash']}")

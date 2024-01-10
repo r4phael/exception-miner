@@ -1,10 +1,145 @@
-,symptom_map,Count,Percentage
-0,Aplication Crashing,65,7.523148148148148
-1,Compilation Error,3,0.3472222222222222
-2,Database Error,1,0.11574074074074073
-3,Error in Logic,113,13.078703703703704
-4,Erros in CI,11,1.2731481481481481
-5,Exceptional Error,532,61.57407407407407
-6,Incorrect Messaging,44,5.092592592592593
-7,Performance,4,0.4629629629629629
-8,UI Componenents not Loaded,1,0.11574074074074073
+symptom,symptom_adj
+,
+Aplication Crashing,Aplication Crashing
+Invalid Arguments,Invalid Arguments
+Exceptional error,Exceptional error
+DatetimeIndex error,DatetimeIndex error
+Deadlock,Deadlock
+Performance,Performance
+Improper Logic,Improper Logic
+Incorrect Logic,Incorrect Logic
+Application Crashing,Application Crashing
+ Application Crashing,Application Crashing
+Incorrect Messaging,Incorrect Messaging
+Erros in CI,Erros in CI
+Exceptional Compilation Error,Exceptional Compilation Error
+Compiler error,Compiler error
+Aplication compatability,Aplication compatability
+Database Error,Database Error
+Pylint Errors,Pylint Errors
+Change the message error,Change the message error
+Exceptional Error,Exceptional Error
+-,-
+Incorrect logic,Incorrect logic
+UI Componenents not Loaded,UI Componenents not Loaded
+Application crash,Application crash
+Logic error,Logic error
+Incorrect error message,Incorrect error message
+"
+Exceptional Error (Import failure)",Exceptional Error (Import failure)
+"Exceptional error
+",Exceptional error
+"
+Redundancy in exception handling",Redundancy in exception handling
+Exception Error,Exception Error
+application crashing,application crashing
+Exceptional  Error,Exceptional  Error
+exceptional Error,exceptional Error
+Partial import error,Partial import error
+Exception leak,Exception leak
+Application crashing,Application crashing
+Improper behavior,Improper behavior
+Unexpected error,Unexpected error
+Generic raise,Generic raise
+Errors in CI,Errors in CI
+Incorrect Identation,Incorrect Identation
+Wrong error raised,Wrong error raised
+Improper messaging,Improper messaging
+Improper logic,Improper logic
+Runtime exception,Runtime exception
+Unhandled exception,Unhandled exception
+"Exceptional 
+Error",Exceptional Error
+"Improper Logic
+",Improper Logic
+"Aplication 
+Crashing
+",Aplication Crashing
+"Aplication
+ Crashing",Aplication Crashing
+"Aplication 
+Crashing",Aplication Crashing
+"Exceptional error
+ (Wrong API)",Exceptional error (Wrong API)
+Incorrect Logic,Incorrect Logic
+Aplication crashing,Aplication crashing
+"Exceptional 
+error",Exceptional error
+"Incorrect 
+Messaging
+",Incorrect Messaging
+"Improper Logic
+",Improper Logic
+"Aplication 
+crashing",Aplication crashing
+"Exceptional
+ Error",Exceptional Error
+"Exceptional error
+ (Wrong package version)",Exceptional error (Wrong package version)
+"Perfomance
+ ",Perfomance
+"
+Incorrect Logic
+",Incorrect Logic
+"Incorrect 
+Messaging 
+(just a 
+spelling error)",Incorrect Messaging (just a spelling error)
+"Incorrect
+ Messaging
+",Incorrect Messaging
+"Incorrect Logic
+",Incorrect Logic
+Improper Logic,Improper Logic
+Erros in CI,Erros in CI
+"Inconsistency
+ Between Modules",Inconsistency Between Modules
+Error in Logic,Error in Logic
+"Incorrect Logic
+",Incorrect Logic
+"Aplication
+crashing",Aplicationcrashing
+" Error was not
+ thrown",Error was not thrown
+"Incorrect 
+Logic",Incorrect Logic
+incorrect logic,incorrect logic
+"Incorrect 
+Messaging
+and Error
+ in Logic
+
+",Incorrect Messagingand Error in Logic
+"Exceptional
+Error",ExceptionalError
+"Unwanted 
+Warning ",Unwanted Warning
+"Exceptional
+error",Exceptionalerror
+Api Change,Api Change
+ unhandled exception in sqlmap/1.0-dev,unhandled exception in sqlmap/1.0-dev
+CI? (Tests),CI? (Tests)
+Installing (?),Installing (?)
+UI not working correctly,UI not working correctly
+Logic?,Logic?
+Exceptional Error?,Exceptional Error?
+Error message,Error message
+CI,CI
+Behavior,Behavior
+Error msg,Error msg
+Refactor/API Change,Refactor/API Change
+API Change,API Change
+Crash/Interrupt,Crash/Interrupt
+Message,Message
+Exceptional Error (TypeError),Exceptional Error (TypeError)
+CI (rules),CI (rules)
+Perfomance,Perfomance
+Poor Debugging ,Poor Debugging
+Crash,Crash
+Error Message,Error Message
+Crash or Blocking (Blocking Plugin),Crash or Blocking (Blocking Plugin)
+Ci,Ci
+Unproper Message Error,Unproper Message Error
+Behavior (No error),Behavior (No error)
+Initialization,Initialization
+Modules not Loaded (Initialization?),Modules not Loaded (Initialization?)

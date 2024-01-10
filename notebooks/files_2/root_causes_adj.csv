@@ -1,0 +1,248 @@
+root_cause,adj,map,grp
+,,Missing Exception Type,Improper Exception Handling
+Error in Logic,Error in Logic,Incorrect Logic,Incorrect Logic
+Badly defined arguments,Badly defined arguments,Incorrect Logic,Incorrect Logic
+Unhandled Exception,Unhandled Exception,Missing Exception Type,Improper Exception Handling
+Missing Raising Condition,Missing Raising Condition,Missing Raising Condition,Improper Raising
+Re-raising exception,Re-raising exception,Re-raising exception,Re-raising exception
+Improper Handling,Improper Handling,Wrong Exception Type,Improper Exception Handling
+Wrong exception type,Wrong exception type,Wrong Exception Type,Improper Exception Handling
+API Mismatch,API Mismatch,API Misuse,API Errors
+API Mismatch,API Mismatch,API Misuse,API Errors
+Unproper Message Error,Unproper Message Error,Unproper Message,Unproper Message
+Incorrect logic leading to raise a execption,Incorrect logic leading to raise a execption,Incorrect Logic,Incorrect Logic
+Incorrect code logic,Incorrect code logic,Incorrect Logic,Incorrect Logic
+Bad Exception Handling Logic,Bad Exception Handling Logic,Incorrect Logic,Incorrect Logic
+No Exception Handling,No Exception Handling,Missing Exception Type,Improper Exception Handling
+and Unproper Message Error,and Unproper Message Error,Unproper Message,Unproper Message
+Missing exception type,Missing exception type,Missing Exception Type,Improper Exception Handling
+-,-,-,-
+Unexpected Raising,Unexpected Raising,Unexpected Raising,Improper Raising
+Unproper exception handling,Unproper exception handling,Missing Exception Type,Improper Exception Handling
+Aplication Crashing,Aplication Crashing,Missing Exception Type,Improper Exception Handling
+Error in logic,Error in logic,Incorrect Logic,Incorrect Logic
+"Improper Handling
+",Improper Handling,Missing Exception Type,Improper Exception Handling
+Improper handling,Improper handling,Missing Exception Type,Improper Exception Handling
+Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Wrong exception type e Unproper Message Error (Utilizava Generic Exception),Generic Exception,EH Anti-Patterns
+"Missing Raising
+ Condition",Missing Raising Condition,Missing Raising Condition,Improper Raising
+"Unproper Message
+Error Due to
+Unhandled 
+Exception",Unproper MessageError Due toUnhandled Exception,Unproper Message,Unproper Message
+Unhandled Error,Unhandled Error,Missing Exception Type,Improper Exception Handling
+Missing finally,Missing finally,Missing Finally Block,Improper Finally Block
+Exception handled incorrectly,Exception handled incorrectly,Wrong Exception Type,Improper Exception Handling
+Wrong Assertion,Wrong Assertion,Wrong Exception Type,Improper Exception Handling
+Lib conflict,Lib conflict,Import Error,Import Error 
+Additional Unhandled Exception,Additional Unhandled Exception,Python 2/3 Incompatibility Errors,Python 2/3 Incompatibility Errors
+String manipulation issue,String manipulation issue,Incorrect Logic,Incorrect Logic
+Unicode string error,Unicode string error,Incorrect Logic,Incorrect Logic
+Unparsable indent source unhandled,Unparsable indent source unhandled,Missing Exception Type,Improper Exception Handling
+String formatting issue,String formatting issue,Incorrect Logic,Incorrect Logic
+Unexpected network condition,Unexpected network condition,Missing Exception Type,Improper Exception Handling
+Indentation block,Indentation block,Python 2/3 Incompatibility Errors,Python 2/3 Incompatibility Errors
+Relative path handling,Relative path handling,Incorrect Logic,Incorrect Logic
+Unespected behaviour on race condition,Unespected behaviour on race condition,Incorrect Logic,Incorrect Logic
+Import issues,Import issues,Import Error,Import Error 
+Improper exception handling block,Improper exception handling block,Missing Exception Type,Improper Exception Handling
+Wrong error raised,Wrong error raised,Wrong Raise Type,Improper Raising
+Wrong variable logged,Wrong variable logged,Unproper Message,Unproper Message
+Unhandled exception,Unhandled exception,Missing Exception Type,Improper Exception Handling
+Missing value check,Missing value check,Incorrect Logic,Incorrect Logic
+Improper Handling by swallowing exception,Improper Handling by swallowing exception,Swallowing Exception,EH Anti-Patterns
+Unhandled exception on finally block,Unhandled exception on finally block,Missing Type on Finally Block,Improper Finally Block
+API Misuse,API Misuse,API Misuse,API Errors
+Exception raised,Exception raised,Wrong Raise Type,Improper Raising
+Import error,Import error,Import Error,Import Error 
+Improper raise,Improper raise,Missing Raising Condition,Improper Raising
+MIssing variable check,MIssing variable check,Incorrect Logic,Incorrect Logic
+Wrong API call,Wrong API call,API Misuse,API Errors
+String formatting error,String formatting error,Incorrect Logic,Incorrect Logic
+Missing error type check,Missing error type check,Incorrect Logic,Incorrect Logic
+Finally block execution error,Finally block execution error,Finally Block Should not Exists,Improper Finally Block
+Missing return value,Missing return value,Incorrect Logic,Incorrect Logic
+Parse error,Parse error,Incorrect Logic,Incorrect Logic
+Missing method,Missing method,Incorrect Logic,Incorrect Logic
+Generic raise,Generic raise,Generic Raise,EH Anti-Patterns
+Type error on raise expression,Type error on raise expression,Wrong Raise Type,Improper Raising
+Permission error,Permission error,Missing Exception Type,Improper Exception Handling
+Method called before variable check,Method called before variable check,Incorrect Logic,Incorrect Logic
+Missing raise keyword,Missing raise keyword,Missing Raising Condition,Improper Raising
+Loop problem,Loop problem,Incorrect Logic,Incorrect Logic
+Cast error,Cast error,Missing Exception Type,Improper Exception Handling
+Missing Handling,Missing Handling,Missing Exception Type,Improper Exception Handling
+Incorrect Identation,Incorrect Identation,Missing Exception Type,Improper Exception Handling
+Incorrect logic inside try block,Incorrect logic inside try block,Incorrect Logic,Incorrect Logic
+Missing Raising Condition and Unhandled Exception,Missing Raising Condition and Unhandled Exception,Missing Raising Condition,Improper Raising
+Incorrect Handling and Unhandled Exception,Incorrect Handling and Unhandled Exception,Missing Exception Type,Improper Exception Handling
+Unhandled Exception and Error in Logic,Unhandled Exception and Error in Logic,Missing Exception Type,Improper Exception Handling
+Improper Raising,Improper Raising,Missing Raising Condition,Improper Raising
+Unhandled Exception and Improper Handling,Unhandled Exception and Improper Handling,Missing Exception Type,Improper Exception Handling
+Error in Logic and Missing Raising Condition,Error in Logic and Missing Raising Condition,Missing Raising Condition,Improper Raising
+Improper Handling and Wrong exception type,Improper Handling and Wrong exception type,Wrong Exception Type,Improper Exception Handling
+"Error in Logic
+",Error in Logic,Incorrect Logic,Incorrect Logic
+"Wrong exception
+ type",Wrong exception type,Wrong Exception Type,Improper Exception Handling
+"Unhandled 
+Exception",Unhandled Exception,Missing Exception Type,Improper Exception Handling
+Improper Logic,Improper Logic,Incorrect Logic,Incorrect Logic
+"Missing Raising 
+Condition",Missing Raising Condition,Missing Raising Condition,Improper Raising
+"Error in Logic 
+(Improper 
+Raising 
+Condition)",Error in Logic (Improper Raising Condition),Wrong Raise Type,Improper Raising
+"Incorrect API 
+Version",Incorrect API Version,Incorrect API Version,API Errors
+Error in Logic,Error in Logic,Incorrect Logic,Incorrect Logic
+"Unhandled Exception
+",Unhandled Exception,Missing Exception Type,Improper Exception Handling
+"Error in Logic
+
+",Error in Logic,Incorrect Logic,Incorrect Logic
+"Unhandled 
+Exception
+",Unhandled Exception,Missing Exception Type,Improper Exception Handling
+"Unproper 
+Message Error",Unproper Message Error,Unproper Message,Unproper Message
+"Unhandled 
+Exception 
+(exception 
+handling already 
+existed, but a
+ type was missing)","Unhandled Exception (exception handling already existed, but a type was missing)",Missing Exception Type,Improper Exception Handling
+"Unexpected 
+Raising",Unexpected Raising,Unexpected Raising,Improper Raising
+"Improper 
+Raising
+Condition",Improper RaisingCondition,Wrong Raise Type,Improper Raising
+"Improper 
+Handling and 
+Error in Logic",Improper Handling and Error in Logic,Incorrect Logic,Incorrect Logic
+"Improper 
+Raising 
+Condition",Improper Raising Condition,Wrong Raise Type,Improper Raising
+"Incorrect Package 
+Version
+",Incorrect Package Version,Incorrect API Version,API Errors
+Incorrect Logic,Incorrect Logic,Incorrect Logic,Incorrect Logic
+"Unhandled 
+Exception and 
+Error in Logic
+",Unhandled Exception and Error in Logic,Missing Exception Type,Improper Exception Handling
+"Unproper 
+Message Error
+",Unproper Message Error,Unproper Message,Unproper Message
+"Unhadled 
+Exception",Unhadled Exception,Missing Exception Type,Improper Exception Handling
+"Error in Logic
+and improper
+handling",Error in Logicand improperhandling,Missing Exception Type,Improper Exception Handling
+"Improper 
+Handling",Improper Handling,Missing Exception Type,Improper Exception Handling
+"Unhandled
+ Exception
+",Unhandled Exception,Missing Exception Type,Improper Exception Handling
+"Improper
+Handling
+",ImproperHandling,Missing Exception Type,Improper Exception Handling
+"Improper 
+Handling
+and Error in 
+Logic",Improper Handlingand Error in Logic,Incorrect Logic,Incorrect Logic
+"Wrong 
+exception type",Wrong exception type,Wrong Exception Type,Improper Exception Handling
+"Improper 
+Handling and
+Error in Logic",Improper Handling andError in Logic,Incorrect Logic,Incorrect Logic
+"Unhandled
+Exception
+",UnhandledException,Missing Exception Type,Improper Exception Handling
+"Missing 
+Condition to
+Handle a 
+exception
+",Missing Condition toHandle a exception,Missing Exception Type,Improper Exception Handling
+"Missing 
+Raising 
+Condition and
+Error in Logic
+
+",Missing Raising Condition andError in Logic,Missing Raising Condition,Improper Raising
+"Improper
+ Handling",Improper Handling,Improper Handling,Improper Exception Handling
+"
+Error in Logic
+",Error in Logic,Incorrect Logic,Incorrect Logic
+"Missing Raising 
+Condition
+and Error in 
+Logic
+",Missing Raising Conditionand Error in Logic,Missing Raising Condition,Improper Raising
+"Improper 
+Handling
+",Improper Handling,Improper Handling,Improper Exception Handling
+"Unhadled
+Exception",UnhadledException,Missing Exception Type,Improper Exception Handling
+"MIssing 
+raising condition",MIssing raising condition,Missing Raising Condition,Improper Raising
+"Incorrect Logic
+",Incorrect Logic,Incorrect Logic,Incorrect Logic
+"Missing 
+Raising 
+Condition
+",Missing Raising Condition,Missing Raising Condition,Improper Raising
+"Package
+ version error",Package version error,Incorrect API Version,API Errors
+"Missing Raising 
+Condition
+",Missing Raising Condition,Missing Raising Condition,Improper Raising
+"Improper 
+Handling
+
+",Improper Handling,Missing Exception Type,Improper Exception Handling
+"Missing Raising
+Condition",Missing RaisingCondition,Missing Raising Condition,Improper Raising
+"Unhandled
+Exception",UnhandledException,Missing Exception Type,Improper Exception Handling
+"error in error
+message logic",error in errormessage logic,Unproper Message,Unproper Message
+"Missing 
+Raising 
+Condition",Missing Raising Condition,Missing Raising Condition,Improper Raising
+handle input hooks using code from IPyt,handle input hooks using code from IPyt,Missing Exception Type,Improper Exception Handling
+Import Error,Import Error,Import Error,Import Error 
+Import Wrong,Import Wrong,Import Error,Import Error 
+Logic,Logic,Incorrect Logic,Incorrect Logic
+Unhandling exception,Unhandling exception,Missing Exception Type,Improper Exception Handling
+Error msg,Error msg,Unproper Message,Unproper Message
+?,?,Missing Exception Type,Improper Exception Handling
+Logic Except,Logic Except,Incorrect Logic,Incorrect Logic
+Refactor/API Change,Refactor/API Change,Incorrect API Version,API Errors
+Bare except,Bare except,Bare Except,EH Anti-Patterns
+Message,Message,Unproper Message,Unproper Message
+"Errouneous raise (erroneously raise NoSuchProcess
+   on old Linux versions)",Errouneous raise (erroneously raise NoSuchProcess   on old Linux versions),Wrong Raise Type,Improper Raising
+Wrong raise type,Wrong raise type,Wrong Raise Type,Improper Raising
+Incorrect message,Incorrect message,Unproper Message,Unproper Message
+Swalling Exceptions,Swalling Exceptions,Swallowing Exception,EH Anti-Patterns
+"Improper Messages, Imports","Improper Messages, Imports",Import Error,Import Error 
+Unhandled Exception (TypeError),Unhandled Exception (TypeError),Missing Exception Type,Improper Exception Handling
+API,API,Incorrect API Version,API Errors
+Improve Message,Improve Message,Unproper Message,Unproper Message
+Python Incompatibility Errors,Python Incompatibility Errors,Python 2/3 Incompatibility Errors,Python 2/3 Incompatibility Errors
+Permission Errors (Concurrency?_),Permission Errors (Concurrency?_),Missing Exception Type,Improper Exception Handling
+Api Wrong Version,Api Wrong Version,Incorrect API Version,API Errors
+Unchanded Exception,Unchanded Exception,Missing Exception Type,Improper Exception Handling
+Excternal Api Change,Excternal Api Change,API Misuse,API Errors
+Incorrect Handling,Incorrect Handling,Missing Exception Type,Improper Exception Handling
+Incorrect raising,Incorrect raising,Wrong Raise Type,Improper Raising
+External Dependency,External Dependency,API Misuse,API Errors
+Lack of message (error not explicity),Lack of message (error not explicity),Unproper Message,Unproper Message
+Incorrect Logic with a Lack of Raising,Incorrect Logic with a Lack of Raising,Missing Exception Type,Improper Exception Handling
+Codification utf-8 (Incorrect Logic?),Codification utf-8 (Incorrect Logic?),Incorrect Logic,Incorrect Logic
+Python Version,Python Version,Python 2/3 Incompatibility Errors,Python 2/3 Incompatibility Errors
+External API,External API,Incorrect API Version,API Errors

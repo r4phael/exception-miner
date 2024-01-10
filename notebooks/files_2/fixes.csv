@@ -1,0 +1,29 @@
+,fix_map,fix_grp,Count,Percentage
+19,Re-raise a exception,Re-raise a exception,11,1.17
+27,Workaround to fix Python 2/3 incompatibility errors,Python version incompatibility errors,1,0.11
+16,Improve the message error,Improve the message error,51,5.41
+1,Add a exception handling block,Improve the exception handling block,291,30.89
+25,Remove the exception handling block,Improve the exception handling block,39,4.14
+5,Add apropriated exception type,Improve the exception handling block,17,1.8
+20,Refactor the exception handling block,Improve the exception handling block,14,1.49
+17,Move the exception handling block to another part,Improve the exception handling block,14,1.49
+2,Add a exception handling block and raise a exception,Improve the exception handling block,6,0.64
+22,Remove a specific exception type,Improve the exception handling block,2,0.21
+15,Import with a exception handling code,Improve the exception handling block,1,0.11
+6,Add apropriated exception type and add a raise condition,Improve the exception handling block,1,0.11
+3,Add a finally mechanism,Improve the Finally Mechanism,3,0.32
+23,Remove finally mechanism,Improve the Finally Mechanism,1,0.11
+4,Add a raise condition,Improve raising conditions,155,16.45
+9,Change the raise type,Improve raising conditions,17,1.8
+21,Remove a raise statement,Improve raising conditions,10,1.06
+18,Move the raise expression to another part,Improve raising conditions,2,0.21
+8,Change the exception type and raise a exception,Improve raising conditions,1,0.11
+14,Import with a exception handling code,Import with a exception handling code,10,1.06
+13,Handle an exception type,Handle a exception,67,7.11
+12,Fix API call and/or version,Fix API version,2,0.21
+0,Add a Swallowing Exception,EH Anti-Patterns,3,0.32
+7,Change exception to generic type,EH Anti-Patterns,2,0.21
+24,Remove the Swallowing Exception,EH Anti-Patterns,1,0.11
+26,Skip test using Swallowing Exception,EH Anti-Patterns,1,0.11
+10,Change the the exception code logic,Change the the exception code logic,81,8.6
+11,Change to apropriated exception type,Change exception handling block,138,14.65

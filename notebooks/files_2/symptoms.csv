@@ -1,0 +1,15 @@
+,symptom_grp,Count,Percentage
+0,Aplication Crashing,115,12.21
+1,Compilation Error,3,0.32
+2,Database Error,1,0.11
+3,Deadlock,1,0.11
+4,Errors in CI,31,3.29
+5,External API Change,5,0.53
+6,Import Error,2,0.21
+7,Incorrect Behavior,211,22.4
+8,Incorrect Exceptions,465,49.36
+9,Incorrect Messaging,86,9.13
+10,Modules Error,3,0.32
+11,Performance,16,1.7
+12,Poor Debugging,1,0.11
+13,UI Componenents not Working Correctly,2,0.21
