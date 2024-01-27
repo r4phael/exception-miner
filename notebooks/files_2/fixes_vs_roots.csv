@@ -1,0 +1,27 @@
+fix_map,API Misuse,Bare Except,Finally Block Should not Exists,Generic Exception,Generic Raise,Import Error,Incorrect API Version,Incorrect Logic,Missing Exception Type,Missing Finally Block,Missing Raising Condition,Missing Type on Finally Block,Python 2/3 Incompatibility Errors,Re-raising exception,Swallowing Exception,Unexpected Raising,Unproper Message,Wrong Exception Type,Wrong Raise Type
+Add a Swallowing Exception,,,,,,66.67,,33.33,,,,,,,,,,,
+Add a exception handling block,0.34,,,,,,,14.09,77.66,,4.47,,0.69,0.69,0.34,0.69,1.03,,
+Add a exception handling block and raise a exception,,,,,,,,16.67,66.67,,16.67,,,,,,,,
+Add a finally mechanism,,,,,,,,66.67,,33.33,,,,,,,,,
+Add a raise condition,0.65,,,,,,0.65,22.58,20.65,,41.94,,,6.45,,1.94,4.52,0.65,
+Add apropriated exception type,2.38,,,,,,2.38,8.33,75.0,,2.38,,,1.19,,3.57,1.19,3.57,
+Add apropriated exception type and add a raise condition,,,,,,,,,100.0,,,,,,,,,,
+Change exception to generic type,,50.0,,,,50.0,,,,,,,,,,,,,
+Change the exception type and raise a exception,,,,,,,,100.0,,,,,,,,,,,
+Change the raise type,,,,,5.88,,,5.88,11.76,,17.65,,,5.88,,,5.88,,47.06
+Change the the exception code logic,,,,,,1.23,2.47,66.67,28.4,,,1.23,,,,,,,
+Change to apropriated exception type,2.17,,,1.45,,,,22.46,53.62,,7.97,,,3.62,,0.72,2.17,4.35,1.45
+Fix API call and/or version,50.0,,,,,50.0,,,,,,,,,,,,,
+Import with a exception handling code,9.09,,,,,36.36,18.18,,36.36,,,,,,,,,,
+Improve the message error,,,,,,,,9.8,,,1.96,,,,,,88.24,,
+Move the exception handling block to another part,,,,,,,,64.29,28.57,,,,,,,7.14,,,
+Move the raise expression to another part,,,,,,,,100.0,,,,,,,,,,,
+Re-raise a exception,,,,,,,,,72.73,,18.18,,,,,,9.09,,
+Refactor the exception handling block,,,,,,,,14.29,57.14,,,,,,,,7.14,7.14,14.29
+Remove a raise statement,10.0,,,,,,,30.0,10.0,,10.0,,,,,10.0,,10.0,20.0
+Remove a specific exception type,,,,,,,,50.0,50.0,,,,,,,,,,
+Remove finally mechanism,,,100.0,,,,,,,,,,,,,,,,
+Remove the Swallowing Exception,,,,,,,,,,,,,,,100.0,,,,
+Remove the exception handling block,2.56,,,,,,,23.08,64.1,,,,,,,5.13,,5.13,
+Skip test using Swallowing Exception,,,,,,,,100.0,,,,,,,,,,,
+Workaround to fix Python 2/3 incompatibility errors,,,,,,,,,,,,,100.0,,,,,,

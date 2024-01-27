@@ -6,15 +6,15 @@ Add a exception handling block,Add a exception handling block,Add a exception ha
 mover o tratamento de exceçãopara  outro lugar,mover o tratamento de exceçãopara  outro lugar,Move the exception handling block to another part,Improve the exception handling block
 Add a exception handling block / Raise a exception,Add a exception handling block / Raise a exception,Add a exception handling block and raise a exception,Improve the exception handling block
 Raise a exception,Raise a exception,Add a raise condition,Improve raising conditions
-Handle a exception,Handle a exception,Handle an exception type,Handle a exception
+Handle a exception,Handle a exception,Add apropriated exception type,Improve the exception handling block
 Add a exception handling block,Add a exception handling block,Add a exception handling block and raise a exception,Improve the exception handling block
-Change the exception type,Change the exception type,Change to apropriated exception type,Change exception handling block
-Change to a specific exception.,Change to a specific exception.,Change to apropriated exception type,Change exception handling block
-Change to apropriated exception type,Change to apropriated exception type,Change to apropriated exception type,Change exception handling block
-Change the exception tests assertions,Change the exception tests assertions,Change to apropriated exception type,Change exception handling block
+Change the exception type,Change the exception type,Change to apropriated exception type,Improve the exception handling block
+Change to a specific exception.,Change to a specific exception.,Change to apropriated exception type,Improve the exception handling block
+Change to apropriated exception type,Change to apropriated exception type,Change to apropriated exception type,Improve the exception handling block
+Change the exception tests assertions,Change the exception tests assertions,Change to apropriated exception type,Improve the exception handling block
 Raise a error,Raise a error,Add a raise condition,Improve raising conditions
 Raise a exception,Raise a exception,Add a raise condition,Improve raising conditions
-Change to a specific exceptio,Change to a specific exceptio,Change to apropriated exception type,Change exception handling block
+Change to a specific exceptio,Change to a specific exceptio,Change to apropriated exception type,Improve the exception handling block
 Raise an error,Raise an error,Add a raise condition,Improve raising conditions
 Change the message error,Change the message error,Improve the message error,Improve the message error
 Use exception handling mechanism to change the logic,Use exception handling mechanism to change the logic,Change the the exception code logic,Change the the exception code logic
@@ -27,7 +27,7 @@ and Change the message error,and Change the message error,Improve the message er
 Add the exception type,Add the exception type,Add apropriated exception type,Improve the exception handling block
 -,-,Add apropriated exception type,Improve the exception handling block
 Add an apropriated exception handling block,Add an apropriated exception handling block,Add a exception handling block,Improve the exception handling block
-Change to a specific exception,Change to a specific exception,Change to apropriated exception type,Change exception handling block
+Change to a specific exception,Change to a specific exception,Change to apropriated exception type,Improve the exception handling block
 Re-raise a exception,Re-raise a exception,Re-raise a exception,Re-raise a exception
 Refactor the exception handling block,Refactor the exception handling block,Refactor the exception handling block,Improve the exception handling block
 Raise a specific exception,Raise a specific exception,Change the raise type,Improve raising conditions
@@ -50,7 +50,7 @@ to another part",Improve andmove theexception handling blockto another part,Move
 "Add a exception
  handling block",Add a exception handling block,Add a exception handling block,Improve the exception handling block
 "Handle a 
-exception",Handle a exception,Handle an exception type,Handle a exception
+exception",Handle a exception,Add apropriated exception type,Improve the exception handling block
 "Handle the 
 exception and 
 re-raise it.",Handle the exception and re-raise it.,Re-raise a exception,Re-raise a exception
@@ -67,7 +67,7 @@ exception
 and change the
  message error
 
-",Change to a specific exceptionand change the message error,Change to apropriated exception type,Change exception handling block
+",Change to a specific exceptionand change the message error,Change to apropriated exception type,Improve the exception handling block
 "Add a exception 
 handling block
  and Handle 
@@ -86,7 +86,7 @@ Fix issue,Fix issue,Change the the exception code logic,Change the the exception
 Fix exception handling,Fix exception handling,Add a exception handling block,Improve the exception handling block
 Add a raising condition,Add a raising condition,Add a raise condition,Improve raising conditions
 Remove raise,Remove raise,Remove a raise statement,Improve raising conditions
-Handle a Exception,Handle a Exception,Handle an exception type,Handle a exception
+Handle a Exception,Handle a Exception,Add apropriated exception type,Improve the exception handling block
 Add a Exception Handling Block,Add a Exception Handling Block,Add a exception handling block,Improve the exception handling block
 Import with a exception handling code.,Import with a exception handling code.,Import with a exception handling code,Import with a exception handling code
 Fix the message error parameter,Fix the message error parameter,Improve the message error,Improve the message error
@@ -99,12 +99,12 @@ Remove indentation,Remove indentation,Workaround to fix Python 2/3 incompatibili
 Move raise expression to another location,Move raise expression to another location,Move the raise expression to another part,Improve raising conditions
 Change exception to generic,Change exception to generic,Change exception to generic type,EH Anti-Patterns
 Fix exception handling block,Fix exception handling block,Add a exception handling block,Improve the exception handling block
-Change error type,Change error type,Change to apropriated exception type,Change exception handling block
+Change error type,Change error type,Change to apropriated exception type,Improve the exception handling block
 Fix raise message,Fix raise message,Improve the message error,Improve the message error
 Add a raise expression,Add a raise expression,Add a raise condition,Improve raising conditions
 Fix handling block,Fix handling block,Add a exception handling block,Improve the exception handling block
 Add if check,Add if check,Change the the exception code logic,Change the the exception code logic
-Change exception type,Change exception type,Change to apropriated exception type,Change exception handling block
+Change exception type,Change exception type,Change to apropriated exception type,Improve the exception handling block
 Remove exception handling,Remove exception handling,Remove the exception handling block,Improve the exception handling block
 Remove raise statement,Remove raise statement,Remove a raise statement,Improve raising conditions
 Fix the message raised,Fix the message raised,Improve the message error,Improve the message error
@@ -125,10 +125,10 @@ Add continue keyword on except block,Add continue keyword on except block,Change
 Change the logic of the handling block,Change the logic of the handling block,Change the the exception code logic,Change the the exception code logic
 Raise an exception,Raise an exception,Add a raise condition,Improve raising conditions
 Raise errors,Raise errors,Add a raise condition,Improve raising conditions
-Change the exception assertions,Change the exception assertions,Change to apropriated exception type,Change exception handling block
+Change the exception assertions,Change the exception assertions,Change to apropriated exception type,Improve the exception handling block
 Change the logic in exception block,Change the logic in exception block,Change the the exception code logic,Change the the exception code logic
-Correct exception handling block,Correct exception handling block,Change to apropriated exception type,Change exception handling block
-Add a exception handling block and especific exception type,Add a exception handling block and especific exception type,Change to apropriated exception type,Change exception handling block
+Correct exception handling block,Correct exception handling block,Change to apropriated exception type,Improve the exception handling block
+Add a exception handling block and especific exception type,Add a exception handling block and especific exception type,Change to apropriated exception type,Improve the exception handling block
 Fix Identation of exception block,Fix Identation of exception block,Change the the exception code logic,Change the the exception code logic
 Change the logic of the handling mechanism,Change the logic of the handling mechanism,Change the the exception code logic,Change the the exception code logic
 Remove Exception handling block,Remove Exception handling block,Remove the exception handling block,Improve the exception handling block
@@ -138,7 +138,7 @@ Add a exception handling block and raise errors,Add a exception handling block a
 Add exception handling block,Add exception handling block,Add a exception handling block,Improve the exception handling block
 Raise especific errors,Raise especific errors,Add a raise condition,Improve raising conditions
 Change the raise condition,Change the raise condition,Change the raise type,Improve raising conditions
-Change the error type,Change the error type,Change to apropriated exception type,Change exception handling block
+Change the error type,Change the error type,Change to apropriated exception type,Improve the exception handling block
 change the try block,change the try block,Change the the exception code logic,Change the the exception code logic
 Add a exception handling block and Raise a exception,Add a exception handling block and Raise a exception,Add a exception handling block and raise a exception,Improve the exception handling block
 Change the Raising Logic,Change the Raising Logic,Change the raise type,Improve raising conditions
@@ -149,7 +149,7 @@ chance the exception handling block logic,chance the exception handling block lo
 Chance the exception handling block logic,Chance the exception handling block logic,Change the the exception code logic,Change the the exception code logic
 Change the message error and Add a exception handling block,Change the message error and Add a exception handling block,Add a exception handling block,Improve the exception handling block
 Add a error type,Add a error type,Add apropriated exception type,Improve the exception handling block
-Change the exception type and Chance the exception handling block logic,Change the exception type and Chance the exception handling block logic,Change to apropriated exception type,Change exception handling block
+Change the exception type and Chance the exception handling block logic,Change the exception type and Chance the exception handling block logic,Change to apropriated exception type,Improve the exception handling block
 Change to a specific exception and Raise a error,Change to a specific exception and Raise a error,Change the exception type and raise a exception,Improve raising conditions
 "Raise an error to 
 optimize 
@@ -163,11 +163,11 @@ handling
 mechanism to 
 change the logic",Use exception handling mechanism to change the logic,Change the the exception code logic,Change the the exception code logic
 "Change to a 
-specific exception.",Change to a specific exception.,Change to apropriated exception type,Change exception handling block
+specific exception.",Change to a specific exception.,Change to apropriated exception type,Improve the exception handling block
 "Add a exception 
 handling block",Add a exception handling block,Add a exception handling block,Improve the exception handling block
 "Change the 
-exception type",Change the exception type,Change to apropriated exception type,Change exception handling block
+exception type",Change the exception type,Change to apropriated exception type,Improve the exception handling block
 Raises an error if the condition is not met,Raises an error if the condition is not met,Add a raise condition,Improve raising conditions
 "Change to 
 apropriated  
@@ -250,7 +250,7 @@ mechanism to
 change the logic",Add a exceptionhandling block and Useexception handling mechanism tochange the logic,Change the the exception code logic,Change the the exception code logic
 "Handle a 
 exception
-",Handle a exception,Handle an exception type,Handle a exception
+",Handle a exception,Add apropriated exception type,Improve the exception handling block
 "Remove a 
 exception type",Remove a exception type,Remove a specific exception type,Improve the exception handling block
 "Move the 
@@ -335,7 +335,7 @@ handling block
 "add a condition 
 to handle a 
 exception
-",add a condition to handle a exception,Handle an exception type,Handle a exception
+",add a condition to handle a exception,Add apropriated exception type,Improve the exception handling block
 "Use exception 
 handling 
 mechanism to 
@@ -420,7 +420,7 @@ add logic in except clause,add logic in except clause,Change the the exception c
 Add a Logger and Message error (Improve),Add a Logger and Message error (Improve),Improve the message error,Improve the message error
 Add a Try-except,Add a Try-except,Add a exception handling block,Improve the exception handling block
 Add a check before except,Add a check before except,Change the the exception code logic,Change the the exception code logic
-Handle the exception,Handle the exception,Handle an exception type,Handle a exception
+Handle the exception,Handle the exception,Add apropriated exception type,Improve the exception handling block
 Remove the exception and add a try-except pass with a raise,Remove the exception and add a try-except pass with a raise,Add a Swallowing Exception,EH Anti-Patterns
 Change the logic,Change the logic,Change the the exception code logic,Change the the exception code logic
 Add import in except block,Add import in except block,Import with a exception handling code,Import with a exception handling code

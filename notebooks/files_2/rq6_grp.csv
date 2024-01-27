@@ -1,0 +1,10 @@
+fix_grp,Bare Except,Bare Raise,Bare Raise Inside Finally,Nested Try,Swallowing Exception,Too Broad Except,Too Broad Raising,Try and Return
+Change the the exception code logic,15.91,18.18,2.27,4.55,27.27,25.0,4.55,2.27
+EH Anti-Patterns,20.0,,,10.0,40.0,30.0,,
+Fix API version,66.67,,,,,33.33,,
+Import with a exception handling code,,,,,100.0,,,
+Improve raising conditions,11.67,36.67,,1.67,5.0,40.0,5.0,
+Improve the Finally Mechanism,,,,,,100.0,,
+Improve the exception handling block,15.3,18.03,,7.38,20.49,36.89,1.37,0.55
+Improve the message error,11.11,11.11,,22.22,11.11,44.44,,
+Re-raise a exception,,30.0,,10.0,,60.0,,

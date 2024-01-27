@@ -5,11 +5,9 @@
 3,Deadlock,1,0.11
 4,Errors in CI,31,3.29
 5,External API Change,5,0.53
-6,Import Error,2,0.21
-7,Incorrect Behavior,211,22.4
-8,Incorrect Exceptions,465,49.36
-9,Incorrect Messaging,86,9.13
-10,Modules Error,3,0.32
-11,Performance,16,1.7
-12,Poor Debugging,1,0.11
-13,UI Componenents not Working Correctly,2,0.21
+6,Incorrect Behavior,211,22.4
+7,Incorrect Exceptions,468,49.68
+8,Incorrect Messaging,86,9.13
+9,Modules Issues,3,0.32
+10,Performance,16,1.7
+11,UI Componenents not Working Correctly,2,0.21

@@ -26,7 +26,7 @@ Application crash,Application crash,Aplication Crashing,Aplication Crashing
 Logic error,Logic error,Incorrect Behavior,Incorrect Behavior
 Incorrect error message,Incorrect error message,Incorrect Messaging,Incorrect Messaging
 "
-Exceptional Error (Import failure)",Exceptional Error (Import failure),Import Error,Import Error
+Exceptional Error (Import failure)",Exceptional Error (Import failure),Import Error,Incorrect Exceptions
 "Exceptional error
 ",Exceptional error,Incorrect Exceptions,Incorrect Exceptions
 "
@@ -35,7 +35,7 @@ Exception Error,Exception Error,Incorrect Exceptions,Incorrect Exceptions
 application crashing,application crashing,Aplication Crashing,Aplication Crashing
 Exceptional  Error,Exceptional  Error,Incorrect Exceptions,Incorrect Exceptions
 exceptional Error,exceptional Error,Incorrect Exceptions,Incorrect Exceptions
-Partial import error,Partial import error,Import Error,Import Error
+Partial import error,Partial import error,Import Error,Incorrect Exceptions
 Exception leak,Exception leak,Incorrect Exceptions,Incorrect Exceptions
 Application crashing,Application crashing,Aplication Crashing,Aplication Crashing
 Improper behavior,Improper behavior,Incorrect Behavior,Incorrect Behavior
@@ -94,7 +94,7 @@ spelling error)",Incorrect Messaging (just a spelling error),Incorrect Messaging
 Improper Logic,,Incorrect Behavior,Incorrect Behavior
 Erros in CI,Errors in CI,Errors in CI,Errors in CI
 "Inconsistency
- Between Modules",Inconsistency Between Modules,Inconsistency Between Modules,Modules Error
+ Between Modules",Inconsistency Between Modules,Inconsistency Between Modules,Modules Issues
 Error in Logic,Error in Logic,Incorrect Behavior,Incorrect Behavior
 "Incorrect Logic
 ",Incorrect Logic,Incorrect Behavior,Incorrect Behavior
@@ -135,12 +135,12 @@ Message,Message,Incorrect Messaging,Incorrect Messaging
 Exceptional Error (TypeError),Exceptional Error (TypeError),Incorrect Exceptions,Incorrect Exceptions
 CI (rules),CI (rules),Errors in CI,Errors in CI
 Perfomance,Perfomance,Performance,Performance
-Poor Debugging,Poor Debugging,Poor Debugging,Poor Debugging
+Poor Debugging,Poor Debugging,Poor Debugging,Incorrect Exceptions
 Crash,Crash,Aplication Crashing,Aplication Crashing
 Error Message,Error Message,Incorrect Messaging,Incorrect Messaging
 Crash or Blocking (Blocking Plugin),Crash or Blocking (Blocking Plugin),Aplication Crashing,Aplication Crashing
 Ci,Ci,Errors in CI,Errors in CI
 Unproper Message Error,Unproper Message Error,Incorrect Messaging,Incorrect Messaging
 Behavior (No error),Behavior (No error),Incorrect Behavior,Incorrect Behavior
-Initialization,Initialization,Modules/App Init,Modules Error
-Modules not Loaded (Initialization?),Modules not Loaded (Initialization?),Modules/App Init,Modules Error
+Initialization,Initialization,Modules/App Init,Modules Issues
+Modules not Loaded (Initialization?),Modules not Loaded (Initialization?),Modules/App Init,Modules Issues

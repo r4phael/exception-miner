@@ -1,0 +1,11 @@
+fix_grp,API Errors,EH Anti-Patterns,Import Error ,Improper Exception Handling,Improper Finally Block,Improper Raising,Incorrect Logic,Python 2/3 Incompatibility Errors,Re-raising exception,Unproper Message
+Change the the exception code logic,2.47,,1.23,28.4,1.23,,66.67,,,
+EH Anti-Patterns,,28.57,42.86,,,,28.57,,,
+Fix API version,50.0,,50.0,,,,,,,
+Import with a exception handling code,30.0,,40.0,30.0,,,,,,
+Improve raising conditions,1.62,0.54,,20.0,,44.86,22.7,,5.95,4.32
+Improve the Finally Mechanism,,,,,50.0,,50.0,,,
+Improve the exception handling block,1.53,0.51,,71.02,,6.78,17.12,0.34,1.36,1.36
+Improve the message error,,,,,,1.96,9.8,,,88.24
+Python version incompatibility errors,,,,,,,,100.0,,
+Re-raise a exception,,,,72.73,,18.18,,,,9.09

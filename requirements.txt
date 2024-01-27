@@ -64,3 +64,5 @@ tree-sitter
 types-pytz==2022.4.0.0
 typing_extensions==4.4.0
 wcwidth==0.2.6
+plotly==5.18.0
+nbformat>=4.2.0

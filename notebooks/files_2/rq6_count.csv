@@ -1,0 +1,9 @@
+,v_anti_pattern_modif_name,Count
+5,Too Broad Except,191
+1,Bare Raise,101
+4,Swallowing Exception,97
+0,Bare Except,76
+3,Nested Try,36
+6,Too Broad Raising,10
+7,Try and Return,3
+2,Bare Raise Inside Finally,1
