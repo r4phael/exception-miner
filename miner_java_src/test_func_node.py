@@ -1,8 +1,8 @@
 from tree_sitter.binding import Node
-from miner_py_src.tree_sitter_lang import QUERY_FUNCTION_DEF, QUERY_FUNCTION_IDENTIFIER, parser
+from miner_java_src.tree_sitter_lang import QUERY_FUNCTION_DEF, QUERY_FUNCTION_IDENTIFIER, parser
 #from miner_py_src.tree_sitter_lang import parser as tree_sitter_parser
 
-#from miner_py_utils import get_function_defs
+#from miner_py_java_utils import get_function_defs
 
 
 def get_function_literal(node: Node):

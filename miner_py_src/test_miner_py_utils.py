@@ -8,7 +8,7 @@ from miner_py_src.miner_py_utils import (Slices,
                             count_try_except_raise, count_raise, count_try_else, count_try_return, 
                             count_finally, get_raise_identifiers, get_except_identifiers, get_except_block, get_function_defs)
 
-from tree_sitter_lang import QUERY_FUNCTION_DEF, QUERY_EXCEPT_CLAUSE, parser
+from miner_py_src.tree_sitter_lang import QUERY_FUNCTION_DEF, QUERY_EXCEPT_CLAUSE, parser
 
 
 class TestCheckFunctionHasExceptionHandler(unittest.TestCase):

@@ -22,6 +22,14 @@
             "justMyCode": true,
         },
         {
+            "name": "miner_java_nexgen",
+            "type": "python",
+            "request": "launch",
+            "program": "miner_java_nexgen.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+        },
+        {
             "name": "miner_pylint",
             "type": "python",
             "request": "launch",
@@ -39,6 +47,18 @@
             "args": [
                 "--mode",
                 "preprocess"
+            ]
+        },
+        {
+            "name": "miner java preprocess csv",
+            "type": "python",
+            "request": "launch",
+            "program": "./miner_java_nexgen.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--mode",
+                "preprocess-csv"
             ]
         },
         {

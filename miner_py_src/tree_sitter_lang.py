@@ -7,13 +7,13 @@ else:
     root = ''
 
 Language.build_library(
-    root + 'build/my-languages.so',
+    root + 'build/python-language.so',
     [
         root + 'tree-sitter-python'
     ]
 )
 
-PY_LANGUAGE = Language(root + 'build/my-languages.so', 'python')
+PY_LANGUAGE = Language(root + 'build/python-language.so', 'python')
 
 parser = Parser()
 parser.set_language(PY_LANGUAGE)

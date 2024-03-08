@@ -2,13 +2,12 @@
     "python.analysis.exclude": [
         "projects/",
         "output/",
-        "miner_py_src/tests/"
+        "miner_py_src/tests/",
+        "miner_java_src/tests/"
     ],
     "python.analysis.typeCheckingMode": "basic",
     "python.testing.unittestArgs": [
         "-v",
-        "-s",
-        "./miner_py_src",
         "-p",
         "test_*.py"
     ],

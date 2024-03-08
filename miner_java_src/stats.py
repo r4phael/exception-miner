@@ -1,24 +1,22 @@
 from collections import Counter
-from .miner_py_utils import (
+from .java_utils import (
     count_except,
     count_raise,
     statement_couter,
-    is_try_except_pass,
     is_generic_except,
     count_broad_exception_raised,
     count_try_except_raise,
     count_misplaced_bare_raise,
-    count_try_else,
     count_try_return,
     count_finally,
     get_except_identifiers,
     get_raise_identifiers,
     get_except_clause,
-    get_except_block
+    get_except_type
 )
 from tqdm import tqdm
 from tree_sitter.binding import Node
-from .miner_py_utils import QUERY_TRY_STMT, QUERY_EXCEPT_CLAUSE
+from .java_utils import QUERY_TRY_STMT, QUERY_EXCEPT_CLAUSE
 
 
 class FileStats:
@@ -41,9 +39,9 @@ class FileStats:
 
         for except_clause, _ in captures_except:
             self.func_try_except.add(f"{file_path}:{func_def.id}")
-            if is_try_except_pass(except_clause):
-                self.func_try_pass.add(f"{file_path}:{func_def.id}")
-                self.files_try_pass.add(file_path)
+            # if is_try_except_pass(except_clause):
+            #     self.func_try_pass.add(f"{file_path}:{func_def.id}")
+            #     self.files_try_pass.add(file_path)
             if is_generic_except(except_clause):
                 tqdm.write(f"{file_path}:{func_def.id}")
                 self.files_generic_except.add(file_path)
@@ -81,8 +79,6 @@ class FileStats:
 
         n_raise = count_raise(func_def)
 
-        n_try_else = count_try_else(func_def)
-
         n_try_return = count_try_return(func_def)
 
         #captures_except_ident = QUERY_EXCEPT_IDENTIFIER.captures(func_def)       
@@ -93,7 +89,7 @@ class FileStats:
 
         captures_raise_ident = get_raise_identifiers(func_def)
 
-        captures_except_block = list(map(lambda x: x[0].text.decode('utf-8'), get_except_block(func_def)))
+        captures_except_block = list(map(lambda x: x[0].text.decode('utf-8'), get_except_type(func_def)))
         
         for except_clause, _ in captures_except:
             n_try_except += 1
@@ -116,7 +112,6 @@ class FileStats:
             "n_captures_broad_raise": n_captures_broad_raise,
             "n_captures_try_except_raise": n_captures_try_except_raise,
             "n_captures_misplaced_bare_raise": n_captures_misplaced_bare_raise,
-            "n_try_else": n_try_else,
             "n_try_return": n_try_return,
             "str_except_identifiers": str_except_identifiers,
             "str_raise_identifiers": str_raise_identifiers,
@@ -144,7 +139,7 @@ class TBLDStats:
     def __str__(self) -> str:
         stats_str = (
             "-------- TBLD STATS --------\n"
-            f"#Methods   {self.functions_count}\n"
+            f"#Python methods   {self.functions_count}\n"
             f"#TryNum=1         {self.try_num_eq_1}\n"
             f"#TryNum≥2         {self.try_num_lt_eq_2}\n"
             f"#MaxTokens        {self.num_max_tokens}\n"
@@ -223,8 +218,8 @@ class CBGDStats:
         stats_str = (
             "-------- CBGD STATS --------\n"
             f"#Try-catch pairs         {self.functions_count}\n"
-            f"#CatchNum=1             {self.except_num_eq_1}\n"
-            f"#CatchNum≥2             {self.except_num_lt_eq_2}\n"
+            f"#ExceptNum=1             {self.except_num_eq_1}\n"
+            f"#ExceptNum≥2             {self.except_num_lt_eq_2}\n"
             f"#MaxTokens of Source     {self.num_max_tokens_source}\n"
             f"#AverageTokens of Source {self.tokens_count_source / self.functions_count if self.functions_count != 0 else 0:.2f}\n"
             f"#MaxTokens of Target     {self.num_max_tokens_target}\n"

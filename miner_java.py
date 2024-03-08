@@ -8,7 +8,7 @@ from pydriller import Git
 from utils import create_logger
 
 logger = create_logger("exception_miner", "exception_miner.log")
-projects = pd.read_csv("projects.csv", sep=",")
+projects = pd.read_csv("projects_java.csv", sep=",")
 
 if not os.path.exists('output/results'):
     os.mkdir('output/results')

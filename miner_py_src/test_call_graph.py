@@ -1,6 +1,6 @@
 import unittest
 
-from call_graph import CFG
+from miner_py_src.call_graph import CFG
 
 
 cfg_mock = {
