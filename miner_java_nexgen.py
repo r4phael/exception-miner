@@ -20,6 +20,7 @@ from miner_java_src.java_utils import (
     count_lines_of_function_body,
     get_function_defs,
     is_bad_exception_handling,
+    is_common_exception,
 )
 from miner_java_src.split_dataset import (
     merge_task1_pkl,
@@ -307,14 +308,13 @@ if __name__ == "__main__":
         logger.warning("ajustar preprocessamento")
     #     preprocess()
     elif args.mode == "preprocess-csv":
-        shutil.rmtree('./output/java/data/task1', ignore_errors=True)
-        shutil.rmtree('./output/java/data/task2', ignore_errors=True)
-        preprocess_csv('minimal.csv')
+        shutil.rmtree("./output/java/data/task1", ignore_errors=True)
+        shutil.rmtree("./output/java/data/task2", ignore_errors=True)
+        # preprocess_csv("minimal.csv")
         # posição 7 não funciona
-        # paths = pathlib.Path("java-dataset-split").glob("**/*.csv")
-        # for path in list(paths)[15:]:
-
-            # preprocess_csv(path)
+        paths = pathlib.Path("java-dataset-split").glob("**/*.csv")
+        for path in list(paths):
+            preprocess_csv(path)
 
         merge_task1_pkl()
     elif args.mode == "splitcsv":

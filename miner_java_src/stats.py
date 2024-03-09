@@ -1,9 +1,12 @@
 from collections import Counter
 from .java_utils import (
+    QUERY_TRY_STMT,
+    QUERY_EXCEPT_CLAUSE,
     count_except,
     count_raise,
     statement_couter,
     is_generic_except,
+    is_empty_catch,
     count_broad_exception_raised,
     count_try_except_raise,
     count_misplaced_bare_raise,
@@ -12,11 +15,10 @@ from .java_utils import (
     get_except_identifiers,
     get_raise_identifiers,
     get_except_clause,
-    get_except_type
+    get_except_type,
 )
 from tqdm import tqdm
 from tree_sitter.binding import Node
-from .java_utils import QUERY_TRY_STMT, QUERY_EXCEPT_CLAUSE
 
 
 class FileStats:
@@ -39,9 +41,9 @@ class FileStats:
 
         for except_clause, _ in captures_except:
             self.func_try_except.add(f"{file_path}:{func_def.id}")
-            # if is_try_except_pass(except_clause):
-            #     self.func_try_pass.add(f"{file_path}:{func_def.id}")
-            #     self.files_try_pass.add(file_path)
+            if is_empty_catch(except_clause):
+                self.func_try_pass.add(f"{file_path}:{func_def.id}")
+                self.files_try_pass.add(file_path)
             if is_generic_except(except_clause):
                 tqdm.write(f"{file_path}:{func_def.id}")
                 self.files_generic_except.add(file_path)
@@ -49,10 +51,10 @@ class FileStats:
 
     def __str__(self) -> str:
         return (
-            f"\n---------------- try-except STATS -----------------\n"
-            f"# try-except found:                   {len(self.func_try_except)}\n"
-            f"% try-except per file:                {(len(self.files_try_except) / self.num_files) * 100:.2f}%\n"
-            f"% try-except per function definition: {(len(self.func_try_except) / max(self.num_functions, 1)) * 100:.2f}%\n"
+            f"\n---------------- try-catch STATS -----------------\n"
+            f"# try-catch found:                   {len(self.func_try_except)}\n"
+            f"% try-catch per file:                {(len(self.files_try_except) / self.num_files) * 100:.2f}%\n"
+            f"% try-catch per function definition: {(len(self.func_try_except) / max(self.num_functions, 1)) * 100:.2f}%\n"
             f"\n--------------- bad practice STATS ----------------\n"
             f"# try-pass:                           {len(self.func_try_pass)}\n"
             f"% try-pass per file:                  {(len(self.files_try_pass) / self.num_files) * 100:.2f}%\n"
@@ -64,7 +66,7 @@ class FileStats:
 
     def get_metrics(self, func_def: Node):
         """
-        Return a list of exception handling metrics in the following order: try-except clauses,
+        Return a list of exception handling metrics in the following order: try-catch clauses,
             try-pass, generic-except
         """
         n_try_except, n_try_pass, n_generic_except = 0, 0, 0
@@ -81,19 +83,21 @@ class FileStats:
 
         n_try_return = count_try_return(func_def)
 
-        #captures_except_ident = QUERY_EXCEPT_IDENTIFIER.captures(func_def)       
+        # captures_except_ident = QUERY_EXCEPT_IDENTIFIER.captures(func_def)
 
-        n_finally = count_finally(func_def) 
-    
+        n_finally = count_finally(func_def)
+
         captures_except_ident = get_except_identifiers(func_def)
 
         captures_raise_ident = get_raise_identifiers(func_def)
 
-        captures_except_block = list(map(lambda x: x[0].text.decode('utf-8'), get_except_type(func_def)))
-        
+        captures_except_block = list(
+            map(lambda x: x[0].text.decode("utf-8"), get_except_type(func_def))
+        )
+
         for except_clause, _ in captures_except:
             n_try_except += 1
-            if is_try_except_pass(except_clause):
+            if is_empty_catch(except_clause):
                 n_try_pass += 1
             if is_generic_except(except_clause):
                 # tqdm.write(f"{file_path}:{func_def.id}")
@@ -139,7 +143,7 @@ class TBLDStats:
     def __str__(self) -> str:
         stats_str = (
             "-------- TBLD STATS --------\n"
-            f"#Python methods   {self.functions_count}\n"
+            f"#Java methods   {self.functions_count}\n"
             f"#TryNum=1         {self.try_num_eq_1}\n"
             f"#TryNum≥2         {self.try_num_lt_eq_2}\n"
             f"#MaxTokens        {self.num_max_tokens}\n"

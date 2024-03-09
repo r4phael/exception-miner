@@ -84,7 +84,7 @@ class ExceptDatasetGenerator:
         self.slices = get_try_catch_slices(node)
 
         if self.slices is None or len(self.slices.handler_nodes) == 0:
-            raise TryNotFoundException("try-except slices not found")
+            return None
 
         self.except_lines = [[] for _ in range(len(self.slices.handler_nodes))]
 
@@ -103,14 +103,25 @@ class ExceptDatasetGenerator:
         for token_info in javalang.tokenizer.tokenize(
             remove_emojis(self.slices.try_block_node.text.decode("utf-8"))
         ):
-            self.token_buffer.append(token_info.value)
+            if type(token_info) == javalang.tokenizer.String:
+                self.token_buffer.append('"')
+                self.token_buffer.append(token_info.value[1:-1])
+                self.token_buffer.append('"')
+            else:
+                self.token_buffer.append(token_info.value)
         self.front_lines.append(self.get_line_and_clear_buffer())
 
         for idx, handler_node in enumerate(self.slices.handler_nodes):
-            for token_info in javalang.tokenizer.tokenize(
-                remove_emojis(handler_node.text.decode("utf-8"))
-            ):
-                self.token_buffer.append(token_info.value)
+            code = remove_emojis(handler_node.text.decode("utf-8"))
+            if "".join(code.split(' ')).endswith('{}'):
+                continue
+            for token_info in javalang.tokenizer.tokenize(code):
+                if type(token_info) == javalang.tokenizer.String:
+                    self.token_buffer.append('"')
+                    self.token_buffer.append(token_info.value[1:-1])
+                    self.token_buffer.append('"')
+                else:
+                    self.token_buffer.append(token_info.value)
             self.except_lines[idx].append(self.get_line_and_clear_buffer())
 
         return self.end_of_generation()

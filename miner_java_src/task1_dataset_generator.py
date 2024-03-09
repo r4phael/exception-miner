@@ -47,8 +47,11 @@ class TryDatasetGenerator:
 
             try:
                 tokenized_function_def = self.tokenize_function_def(func_def)
+            except javalang.tokenizer.LexerError as e:
+                tqdm.write(str(e))
+                continue
             except UnicodeEncodeError as e:
-                print(e)
+                tqdm.write(str(e))
                 continue
 
             if tokenized_function_def is not None:
