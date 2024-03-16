@@ -1,0 +1,54 @@
+,src,dst,values
+0,API Errors,Change the the exception code logic,2
+1,API Errors,Exception handling block operations,2
+2,API Errors,Exception type operations,7
+3,API Errors,Fix API version,1
+4,API Errors,Import with a exception handling code,3
+5,API Errors,Improve raising conditions,3
+6,Import Error ,Change the the exception code logic,1
+7,Import Error ,EH Anti-Patterns,3
+8,Import Error ,Fix API version,1
+9,Import Error ,Import with a exception handling code,4
+10,Improper Finally Block,Change the the exception code logic,1
+11,Improper Finally Block,Improve the Finally Mechanism,2
+12,Incorrect Logic,Change the the exception code logic,56
+13,Incorrect Logic,EH Anti-Patterns,2
+14,Incorrect Logic,Exception handling block operations,60
+15,Incorrect Logic,Exception type operations,39
+16,Incorrect Logic,Improve raising conditions,42
+17,Incorrect Logic,Improve the Finally Mechanism,2
+18,Incorrect Logic,Improve the message error,5
+19,Missing Raising Condition,Exception handling block operations,14
+20,Missing Raising Condition,Exception type operations,13
+21,Missing Raising Condition,Improve raising conditions,69
+22,Missing Raising Condition,Improve the message error,1
+23,Missing Raising Condition,Re-raise a exception,2
+24,Python Version Incompatibility Errors,Exception handling block operations,2
+25,Python Version Incompatibility Errors,Python version incompatibility errors,1
+26,Re-raising Exception,Exception handling block operations,2
+27,Re-raising Exception,Exception type operations,6
+28,Re-raising Exception,Improve raising conditions,11
+29,Unexpected Raising,Exception handling block operations,5
+30,Unexpected Raising,Exception type operations,4
+31,Unexpected Raising,Improve raising conditions,5
+32,Unhandled Exception,Change the the exception code logic,31
+33,Unhandled Exception,EH Anti-Patterns,1
+34,Unhandled Exception,Exception handling block operations,258
+35,Unhandled Exception,Exception type operations,139
+36,Unhandled Exception,Import with a exception handling code,4
+37,Unhandled Exception,Improve raising conditions,35
+38,Unhandled Exception,Re-raise a exception,8
+39,Unproper Message,Change the the exception code logic,1
+40,Unproper Message,Exception handling block operations,3
+41,Unproper Message,Exception type operations,4
+42,Unproper Message,Improve raising conditions,8
+43,Unproper Message,Improve the message error,45
+44,Unproper Message,Re-raise a exception,1
+45,Wrong Exception Type,Change the the exception code logic,1
+46,Wrong Exception Type,EH Anti-Patterns,1
+47,Wrong Exception Type,Exception handling block operations,3
+48,Wrong Exception Type,Exception type operations,11
+49,Wrong Exception Type,Improve raising conditions,2
+50,Wrong Raise Type,Change the the exception code logic,2
+51,Wrong Raise Type,Exception type operations,2
+52,Wrong Raise Type,Improve raising conditions,10

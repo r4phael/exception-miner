@@ -1,28 +1,26 @@
 ,fix_map,fix_grp,Count,Percentage
-18,Re-raise a exception,Re-raise a exception,11,1.17
-26,Workaround to fix Python 2/3 incompatibility errors,Python version incompatibility errors,1,0.11
-15,Improve the message error,Improve the message error,51,5.41
-1,Add a exception handling block,Improve the exception handling block,291,30.89
-11,Change to apropriated exception type,Improve the exception handling block,138,14.65
-5,Add apropriated exception type,Improve the exception handling block,84,8.92
-24,Remove the exception handling block,Improve the exception handling block,39,4.14
-16,Move the exception handling block to another part,Improve the exception handling block,14,1.49
-19,Refactor the exception handling block,Improve the exception handling block,14,1.49
-2,Add a exception handling block and raise a exception,Improve the exception handling block,6,0.64
-21,Remove a specific exception type,Improve the exception handling block,2,0.21
-6,Add apropriated exception type and add a raise condition,Improve the exception handling block,1,0.11
-14,Import with a exception handling code,Improve the exception handling block,1,0.11
+17,Re-raise a exception,Re-raise a exception,11,1.17
+24,Workaround to fix Python 2/3 incompatibility errors,Python version incompatibility errors,1,0.11
+14,Improve the message error,Improve the message error,51,5.41
 3,Add a finally mechanism,Improve the Finally Mechanism,3,0.32
-22,Remove finally mechanism,Improve the Finally Mechanism,1,0.11
+20,Remove finally mechanism,Improve the Finally Mechanism,1,0.11
 4,Add a raise condition,Improve raising conditions,155,16.45
 9,Change the raise type,Improve raising conditions,17,1.8
-20,Remove a raise statement,Improve raising conditions,10,1.06
-17,Move the raise expression to another part,Improve raising conditions,2,0.21
+18,Remove a raise statement,Improve raising conditions,10,1.06
+16,Move the raise expression,Improve raising conditions,2,0.21
 8,Change the exception type and raise a exception,Improve raising conditions,1,0.11
-13,Import with a exception handling code,Import with a exception handling code,10,1.06
+13,Import with a exception handling code,Import with a exception handling code,11,1.17
 12,Fix API call and/or version,Fix API version,2,0.21
+11,Change to apropriated exception type,Exception type operations,138,14.65
+5,Add apropriated exception type,Exception type operations,84,8.92
+19,Remove a specific exception type,Exception type operations,2,0.21
+6,Add apropriated exception type and add a raise condition,Exception type operations,1,0.11
+1,Add a exception handling block,Exception handling block operations,291,30.89
+22,Remove the exception handling block,Exception handling block operations,39,4.14
+15,Move the exception handling block,Exception handling block operations,14,1.49
+2,Add a exception handling block and raise a exception,Exception handling block operations,6,0.64
 0,Add a Swallowing Exception,EH Anti-Patterns,3,0.32
 7,Change exception to generic type,EH Anti-Patterns,2,0.21
-23,Remove the Swallowing Exception,EH Anti-Patterns,1,0.11
-25,Skip test using Swallowing Exception,EH Anti-Patterns,1,0.11
-10,Change the the exception code logic,Change the the exception code logic,81,8.6
+21,Remove the Swallowing Exception,EH Anti-Patterns,1,0.11
+23,Skip test using Swallowing Exception,EH Anti-Patterns,1,0.11
+10,Change the the exception code logic,Change the the exception code logic,95,10.08

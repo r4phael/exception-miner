@@ -1,20 +1,13 @@
-,root_cause_grp,root_cause_map,Count,Percentage
-0,API Errors,API Misuse,11,1.17
-1,API Errors,Incorrect API Version,7,0.74
-2,EH Anti-Patterns,Bare Except,1,0.11
-3,EH Anti-Patterns,Generic Exception,2,0.21
-4,EH Anti-Patterns,Generic Raise,1,0.11
-5,EH Anti-Patterns,Swallowing Exception,2,0.21
-6,Import Error ,Import Error,9,0.96
-7,Improper Exception Handling,Missing Exception Type,476,50.53
-8,Improper Exception Handling,Wrong Exception Type,14,1.49
-9,Improper Finally Block,Finally Block Should not Exists,1,0.11
-10,Improper Finally Block,Missing Finally Block,1,0.11
-11,Improper Finally Block,Missing Type on Finally Block,1,0.11
-12,Improper Raising,Missing Raising Condition,99,10.51
-13,Improper Raising,Unexpected Raising,13,1.38
-14,Improper Raising,Wrong Raise Type,14,1.49
-15,Incorrect Logic,Incorrect Logic,206,21.87
-16,Python 2/3 Incompatibility Errors,Python 2/3 Incompatibility Errors,3,0.32
-17,Re-raising exception,Re-raising exception,19,2.02
-18,Unproper Message,Unproper Message,62,6.58
+,root_cause_grp,Count,Percentage
+8,Unhandled Exception,477,50.64
+3,Incorrect Logic,206,21.87
+4,Missing Raising Condition,99,10.51
+9,Unproper Message,62,6.58
+6,Re-raising Exception,19,2.02
+0,API Errors,18,1.91
+10,Wrong Exception Type,18,1.91
+7,Unexpected Raising,14,1.49
+11,Wrong Raise Type,14,1.49
+1,Import Error ,9,0.96
+2,Improper Finally Block,3,0.32
+5,Python Version Incompatibility Errors,3,0.32

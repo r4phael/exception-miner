@@ -1,0 +1,9 @@
+,index,sum
+0,Nested Try,812
+1,Swallowing Exceptions,12674
+2,Too Broad Except,18455
+3,Unhandled Exceptions,15628
+4,Bare Raise Block,134
+5,Too Broad Raising,7263
+6,Bare Except,5153
+7,Baire Raise Finally,12

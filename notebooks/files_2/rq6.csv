@@ -8,15 +8,14 @@ Add apropriated exception type,8.33,16.67,,6.25,29.17,39.58,,
 Change exception to generic type,40.0,,,20.0,,40.0,,
 Change the exception type and raise a exception,,,,,,100.0,,
 Change the raise type,20.0,40.0,,20.0,,20.0,,
-Change the the exception code logic,15.91,18.18,2.27,4.55,27.27,25.0,4.55,2.27
+Change the the exception code logic,14.55,16.36,1.82,7.27,21.82,32.73,3.64,1.82
 Change to apropriated exception type,17.82,19.8,,3.96,19.8,34.65,1.98,1.98
 Fix API call and/or version,66.67,,,,,33.33,,
 Import with a exception handling code,,,,,100.0,,,
 Improve the message error,11.11,11.11,,22.22,11.11,44.44,,
-Move the exception handling block to another part,23.08,15.38,,,23.08,38.46,,
-Move the raise expression to another part,,,,,,100.0,,
+Move the exception handling block,23.08,15.38,,,23.08,38.46,,
+Move the raise expression,,,,,,100.0,,
 Re-raise a exception,,30.0,,10.0,,60.0,,
-Refactor the exception handling block,9.09,9.09,,18.18,,63.64,,
 Remove a raise statement,,50.0,,,,,50.0,
 Remove finally mechanism,,,,,,100.0,,
 Remove the Swallowing Exception,,,,,100.0,,,

@@ -1,0 +1,58 @@
+,src,dst,values
+0,API Errors,Aplication Crashing,2
+1,API Errors,Errors in CI,2
+2,API Errors,External API Change,2
+3,API Errors,Incorrect Behavior,4
+4,API Errors,Incorrect Exceptions,8
+5,Import Error ,Aplication Crashing,1
+6,Import Error ,Errors in CI,2
+7,Import Error ,External API Change,1
+8,Import Error ,Incorrect Exceptions,5
+9,Improper Finally Block,Aplication Crashing,1
+10,Improper Finally Block,Incorrect Exceptions,2
+11,Incorrect Logic,Aplication Crashing,19
+12,Incorrect Logic,Compilation Error,3
+13,Incorrect Logic,Errors in CI,4
+14,Incorrect Logic,External API Change,1
+15,Incorrect Logic,Incorrect Behavior,90
+16,Incorrect Logic,Incorrect Exceptions,75
+17,Incorrect Logic,Incorrect Messaging,5
+18,Incorrect Logic,Modules Issues,1
+19,Incorrect Logic,Performance,8
+20,Missing Raising Condition,Aplication Crashing,11
+21,Missing Raising Condition,Errors in CI,5
+22,Missing Raising Condition,Incorrect Behavior,23
+23,Missing Raising Condition,Incorrect Exceptions,54
+24,Missing Raising Condition,Incorrect Messaging,6
+25,Python Version Incompatibility Errors,Incorrect Exceptions,3
+26,Re-raising Exception,Aplication Crashing,7
+27,Re-raising Exception,Incorrect Behavior,5
+28,Re-raising Exception,Incorrect Exceptions,6
+29,Re-raising Exception,Incorrect Messaging,1
+30,Unexpected Raising,Aplication Crashing,1
+31,Unexpected Raising,Incorrect Behavior,3
+32,Unexpected Raising,Incorrect Exceptions,9
+33,Unexpected Raising,Incorrect Messaging,1
+34,Unhandled Exception,Aplication Crashing,71
+35,Unhandled Exception,Database Error,1
+36,Unhandled Exception,Deadlock,0
+37,Unhandled Exception,Errors in CI,16
+38,Unhandled Exception,External API Change,1
+39,Unhandled Exception,Incorrect Behavior,77
+40,Unhandled Exception,Incorrect Exceptions,286
+41,Unhandled Exception,Incorrect Messaging,13
+42,Unhandled Exception,Modules Issues,2
+43,Unhandled Exception,Performance,7
+44,Unhandled Exception,UI Componenents not Working Correctly,2
+45,Unproper Message,Errors in CI,1
+46,Unproper Message,Incorrect Exceptions,3
+47,Unproper Message,Incorrect Messaging,58
+48,Wrong Exception Type,Aplication Crashing,1
+49,Wrong Exception Type,Errors in CI,1
+50,Wrong Exception Type,Incorrect Behavior,5
+51,Wrong Exception Type,Incorrect Exceptions,8
+52,Wrong Exception Type,Incorrect Messaging,2
+53,Wrong Exception Type,Performance,1
+54,Wrong Raise Type,Aplication Crashing,1
+55,Wrong Raise Type,Incorrect Behavior,4
+56,Wrong Raise Type,Incorrect Exceptions,9
