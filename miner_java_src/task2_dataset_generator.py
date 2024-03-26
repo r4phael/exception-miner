@@ -38,12 +38,19 @@ class ExceptDatasetGenerator:
         generated = []
 
         for func_def in tqdm(self.func_defs):
-            tokenized_function_def = self.tokenize_function_def(func_def)
+            try:
+                tokenized_function_def = self.tokenize_function_def(func_def)
+            except javalang.tokenizer.LexerError as e:
+                tqdm.write(str(e))
+                continue
+            except UnicodeEncodeError as e:
+                tqdm.write(str(e))
+                continue
 
             if tokenized_function_def is None:
                 continue
 
-            generated += tokenized_function_def
+            generated.extend(tokenized_function_def)
             self.stats.increment_function_counter()
             self.stats.increment_statements_counter(func_def)
             self.stats.increment_except_stats(func_def)
@@ -91,15 +98,25 @@ class ExceptDatasetGenerator:
         if len(self.except_lines) == 0:
             raise MinerJavaError("No exceptions found")
 
-        self.front_lines.append(
+        for token_info in javalang.tokenizer.tokenize(
             " ".join(
                 map(
-                    lambda x: remove_emojis(x.text.decode("utf-8")),
+                    lambda x: remove_emojis(x),
                     self.slices.method_context,
                 )
             )
-            + " "
-        )
+        ):
+            if type(token_info) == javalang.tokenizer.String and len(token_info.value) == 3 and token_info.value.startswith("'") and token_info.value.endswith("'"):
+                self.token_buffer.append("'")
+                self.token_buffer.append(token_info.value[1])
+                self.token_buffer.append("'")
+            elif type(token_info) == javalang.tokenizer.String:
+                self.token_buffer.append(token_info.value)
+            else:
+                self.token_buffer.append(token_info.value)
+        self.token_buffer.append(" ")
+        self.front_lines.append(self.get_line_and_clear_buffer())
+
         for token_info in javalang.tokenizer.tokenize(
             remove_emojis(self.slices.try_block_node.text.decode("utf-8"))
         ):
@@ -113,7 +130,7 @@ class ExceptDatasetGenerator:
 
         for idx, handler_node in enumerate(self.slices.handler_nodes):
             code = remove_emojis(handler_node.text.decode("utf-8"))
-            if "".join(code.split(' ')).endswith('{}'):
+            if "".join(code.split(" ")).endswith("{}"):
                 continue
             for token_info in javalang.tokenizer.tokenize(code):
                 if type(token_info) == javalang.tokenizer.String:

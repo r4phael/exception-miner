@@ -1,0 +1,1 @@
+try { return Long . parseLong ( stringRep ) ;

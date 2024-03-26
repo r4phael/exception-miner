@@ -83,6 +83,7 @@ EXCEPTIONS_FILTER = [
     b"NullPointerException",
     b"RemoteException",
     b"RuntimeException",
+    b"IndexOutOfBoundsException"
 ]
 
 
@@ -152,7 +153,32 @@ def get_try_catch_slices(node: Node):
 
         queue.extend(children)
 
-    return TryCatchSlices(method_context, try_block_node, handler_nodes)
+    # converte multiline string Java
+    buffer = []
+    flag = False
+    m = []
+    for x in method_context:
+        if x.type == 'character_literal':
+            m.append("'")
+            m.append(x.text.decode('utf-8')[1])
+            m.append("'")
+        elif x.type == '"""':
+            flag = not flag
+            if not flag:
+                m.append(" ".join(buffer).replace('"', '').encode('unicode_escape').decode('utf-8'))
+                m.append('"')
+            else:
+                m.append('"')
+        else:
+            if flag:
+                buffer.append(x.text.decode('utf-8'))
+            elif x.type == 'escape_sequence':
+                m.append(x.text.decode('utf-8')[1:])
+            else:
+                m.append(x.text.decode('utf-8'))
+
+
+    return TryCatchSlices(m, try_block_node, handler_nodes)
 
 
 def count_lines_of_function_body(f: Node, filename=None):

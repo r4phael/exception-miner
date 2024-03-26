@@ -13,5 +13,15 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "java.project.resourceFilters": [
+        "node_modules",
+        "\\.git",
+        "./output",
+        "./projects"
+    ],
+    "files.watcherExclude": {
+        "./output": true,
+        "./projects": true
+    }
 }

@@ -14,7 +14,7 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(logging.DEBUG)
 
-GITHUB_TOKEN = 'YOUR_TOKEN'
+GITHUB_TOKEN = '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'
 GITHUB_AUTH_HEADER = {
     'authorization': "token {0}".format(GITHUB_TOKEN),  # Add Github token
 }
@@ -27,8 +27,8 @@ def search_github(N):
     url = "https://api.github.com/search/repositories?"
     # querystring = {
     #    "q": f"language:python stars:{min}..{max}", "sort": "stars", "per_page": 100}
-    querystring = {"q": f"language:python stars:<{N}",
-                   "sort": "stars forks", "per_page": 100}
+    querystring = {"q": f"created:2023 language:Java stars:<{N}",
+                   "sort": "stars forks", "per_page": 100, "o": "desc"}
 
     first_page = session.get(url, params=querystring,)  # )
     yield first_page
@@ -56,7 +56,7 @@ def main(n, iterations, headers):
     Iterate through pages, parse the results to a dataframe, and stop at 5000 repos.
     '''
 
-    with open("projects_gh.csv", 'w') as file:
+    with open("projects_java_nexgen_validation.csv", 'w') as file:
         writer = csv.writer(file, delimiter=',')
         writer.writerow(headers)
 
@@ -89,10 +89,10 @@ def main(n, iterations, headers):
                         f"Error!!! parsing gh pages. exception: {str(ex)}")
                     file.close()
 
-            df = pd.read_csv("projects_gh.csv")
+            df = pd.read_csv("projects_java_nexgen_validation.csv")
             n = df['stars'].min()
 
-    df.to_csv('projects_gh.csv')
+    df.to_csv('projects_java_nexgen_validation.csv')
     df.loc[:, ['repo_name', 'url_repo', 'source']].to_csv(
         'projects_py.csv', index=False, index_label=['name', 'repo', 'source'])
 
@@ -100,4 +100,4 @@ def main(n, iterations, headers):
 if __name__ == '__main__':
     cols = ['owner', 'repo_name', 'url_repo', 'stars',
             'size', 'watchers', 'language', 'has_issues', 'forks', 'open_issues', 'source']
-    main(n=9999999, iterations=5, headers=cols)
+    main(n=9999999, iterations=1, headers=cols)

@@ -40,7 +40,7 @@ logger = create_logger("exception_java_miner_nexgen", "exception_java_miner_nexg
 
 
 def fetch_repositories():
-    projects = pd.read_csv("projects_java.csv", sep=",")
+    projects = pd.read_csv("projects_java_nexgen_validation.csv", sep=",")
 
     if not os.path.exists("output/java/results"):
         os.makedirs("output/java/results")
@@ -49,12 +49,12 @@ def fetch_repositories():
         # repo = Repository(row['repo'], clone_repo_to="projects")
         # commits_count = CommitsCount(path_to_repo= os.path.join('projects', row['repo']))
         # for commit in Repository(row['repo'], clone_repo_to="projects").traverse_commits():
-        project = row["name"]
+        project = row["repo_name"]
         files_with_try = []
 
         try:
             path = os.path.join(os.getcwd(), "projects/java/", project)
-            git_cmd = "git clone {}.git --recursive {}".format(row["repo"], path)
+            git_cmd = "git clone {}.git --recursive {}".format(row["url_repo"], path)
             call(git_cmd, shell=True)
             gr = Git(path)
             logger.warning("Exception Miner: cloned project: {}".format(project))
@@ -305,8 +305,9 @@ if __name__ == "__main__":
     if args.mode == "fetch":
         fetch_repositories()
     elif args.mode == "preprocess":
-        logger.warning("ajustar preprocessamento")
-    #     preprocess()
+        shutil.rmtree("./output/java/data/task1", ignore_errors=True)
+        shutil.rmtree("./output/java/data/task2", ignore_errors=True)
+        preprocess()
     elif args.mode == "preprocess-csv":
         shutil.rmtree("./output/java/data/task1", ignore_errors=True)
         shutil.rmtree("./output/java/data/task2", ignore_errors=True)

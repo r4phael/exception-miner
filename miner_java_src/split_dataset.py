@@ -50,24 +50,20 @@ def save_task2_onmt(dataframe: pd.DataFrame):
         return
     train, valid, test = split_dataset(dataframe)
 
-    
-
-    rand_hash = str(random.getrandbits(64))
-
     os.makedirs('output/java/data/task2', exist_ok=True)
 
     with open(f'output/java/data/task2/src-train.txt', 'a') as writer:
-        writer.writelines([remove_emojis(''.join(line)) + '\n' for line in train['try']])
+        writer.writelines([remove_emojis(''.join(line).encode('unicode_escape').decode('utf-8')) + '\n' for line in train['try']])
     with open(f'output/java/data/task2/tgt-train.txt', 'a') as writer:
-        writer.writelines([remove_emojis(''.join(line)) + '\n' for line in train['except']])
+        writer.writelines([remove_emojis(''.join(line).encode('unicode_escape').decode('utf-8')) + '\n' for line in train['except']])
     with open(f'output/java/data/task2/src-valid.txt', 'a') as writer:
-        writer.writelines([remove_emojis(''.join(line)) + '\n' for line in valid['try']])
+        writer.writelines([remove_emojis(''.join(line).encode('unicode_escape').decode('utf-8')) + '\n' for line in valid['try']])
     with open(f'output/java/data/task2/tgt-valid.txt', 'a') as writer:
-        writer.writelines([remove_emojis(''.join(line)) + '\n' for line in valid['except']])
+        writer.writelines([remove_emojis(''.join(line).encode('unicode_escape').decode('utf-8')) + '\n' for line in valid['except']])
     with open(f'output/java/data/task2/src-test.txt', 'a') as writer:
-        writer.writelines([remove_emojis(''.join(line)) + '\n' for line in test['try']])
+        writer.writelines([remove_emojis(''.join(line).encode('unicode_escape').decode('utf-8')) + '\n' for line in test['try']])
     with open(f'output/java/data/task2/tgt-test.txt', 'a') as writer:
-        writer.writelines([remove_emojis(''.join(line)) + '\n' for line in test['except']])
+        writer.writelines([remove_emojis(''.join(line).encode('unicode_escape').decode('utf-8')) + '\n' for line in test['except']])
 
 
 def get_dataframe_from_pickle(path: str):

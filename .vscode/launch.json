@@ -62,6 +62,30 @@
             ]
         },
         {
+            "name": "miner java nexgen fetch gh",
+            "type": "python",
+            "request": "launch",
+            "program": "./miner_java_nexgen.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--mode",
+                "fetch"
+            ]
+        },
+        {
+            "name": "miner java nexgen preprocess",
+            "type": "python",
+            "request": "launch",
+            "program": "./miner_java_nexgen.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--mode",
+                "preprocess"
+            ]
+        },
+        {
             "name": "miner demo",
             "type": "python",
             "request": "launch",

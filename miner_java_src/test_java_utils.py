@@ -1,6 +1,7 @@
 import unittest
 
 from miner_java_src.java_utils import (Slices,
+                            get_try_catch_slices,
                             check_function_has_except_handler,
                             check_function_has_nested_try,
                             count_lines_of_function_body, get_try_slices, 
@@ -635,6 +636,25 @@ class TestExceptBlocks(unittest.TestCase):
         expected = ['NoAppException', 'Exception']
         
         self.assertEqual(actual, expected)
+
+class TestCharacterLiteral(unittest.TestCase):
+
+    def test_get_char(self):
+        code = b'''public List<String> listCommands(Context ctx) {
+        if(teste == '"') {
+            //teste
+        }
+        try {
+         //teste
+        } catch (Exception e){}
+    }
+        '''
+        captures = QUERY_FUNCTION_DEF.captures(parser.parse(code).root_node)
+        func_def, _ = captures[0]
+        captures = get_try_catch_slices(func_def)
+
+        child = captures[0]
+        self.assertEqual(68, " ".join(child).find("' \" '"))
 
 if __name__ == '__main__':
     unittest.main()
