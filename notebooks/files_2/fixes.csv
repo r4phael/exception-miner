@@ -1,26 +1,444 @@
-,fix_map,fix_grp,Count,Percentage
-17,Re-raise a exception,Re-raise a exception,11,1.17
-24,Workaround to fix Python 2/3 incompatibility errors,Python version incompatibility errors,1,0.11
-14,Improve the message error,Improve the message error,51,5.41
-3,Add a finally mechanism,Improve the Finally Mechanism,3,0.32
-20,Remove finally mechanism,Improve the Finally Mechanism,1,0.11
-4,Add a raise condition,Improve raising conditions,155,16.45
-9,Change the raise type,Improve raising conditions,17,1.8
-18,Remove a raise statement,Improve raising conditions,10,1.06
-16,Move the raise expression,Improve raising conditions,2,0.21
-8,Change the exception type and raise a exception,Improve raising conditions,1,0.11
-13,Import with a exception handling code,Import with a exception handling code,11,1.17
-12,Fix API call and/or version,Fix API version,2,0.21
-11,Change to apropriated exception type,Exception type operations,138,14.65
-5,Add apropriated exception type,Exception type operations,84,8.92
-19,Remove a specific exception type,Exception type operations,2,0.21
-6,Add apropriated exception type and add a raise condition,Exception type operations,1,0.11
-1,Add a exception handling block,Exception handling block operations,291,30.89
-22,Remove the exception handling block,Exception handling block operations,39,4.14
-15,Move the exception handling block,Exception handling block operations,14,1.49
-2,Add a exception handling block and raise a exception,Exception handling block operations,6,0.64
-0,Add a Swallowing Exception,EH Anti-Patterns,3,0.32
-7,Change exception to generic type,EH Anti-Patterns,2,0.21
-21,Remove the Swallowing Exception,EH Anti-Patterns,1,0.11
-23,Skip test using Swallowing Exception,EH Anti-Patterns,1,0.11
-10,Change the the exception code logic,Change the the exception code logic,95,10.08
+fix,fix_adj
+,
+Remove the exception handling mechanism,Remove the exception handling mechanism
+Handling error messages for invalid arguments,Handling error messages for invalid arguments
+Add a exception handling block,Add a exception handling block
+mover o tratamento de exceçãopara  outro lugar,mover o tratamento de exceçãopara  outro lugar
+Add a exception handling block / Raise a exception,Add a exception handling block / Raise a exception
+Raise a exception,Raise a exception
+Handle a exception,Handle a exception
+ Add a exception handling block,Add a exception handling block
+Change the exception type,Change the exception type
+Change to a specific exception.,Change to a specific exception.
+Change to apropriated exception type,Change to apropriated exception type
+Change the exception tests assertions,Change the exception tests assertions
+Raise a error,Raise a error
+Raise a exception,Raise a exception
+Change to a specific exceptio,Change to a specific exceptio
+Raise an error,Raise an error
+Change the message error,Change the message error
+Use exception handling mechanism to change the logic,Use exception handling mechanism to change the logic
+improvement in error message,improvement in error message
+improvement in code logic and error message,improvement in code logic and error message
+Improvement Exception Handling,Improvement Exception Handling
+Add Exception Handling,Add Exception Handling
+Add apropriated exception type,Add apropriated exception type
+ and Change the message error,and Change the message error
+Add the exception type,Add the exception type
+-,-
+Add an apropriated exception handling block,Add an apropriated exception handling block
+Change to a specific exception,Change to a specific exception
+Re-raise a exception,Re-raise a exception
+Refactor the exception handling block,Refactor the exception handling block
+Raise a specific exception,Raise a specific exception
+Removed exception raise,Removed exception raise
+Refactor code and add a exception handling block,Refactor code and add a exception handling block
+Handle the exception and re-raise it.,Handle the exception and re-raise it.
+Refactor the logic,Refactor the logic
+Move the exception handling block to another part,Move the exception handling block to another part
+"Use exception
+handling
+ mechanism to
+ change the logic",Use exceptionhandling mechanism to change the logic
+"Import with a exception handling code
+",Import with a exception handling code
+"Improve and
+move the
+exception 
+handling block
+to another part",Improve andmove theexception handling blockto another part
+"Add a exception
+ handling block",Add a exception handling block
+"Handle a 
+exception",Handle a exception
+"Handle the 
+exception and 
+re-raise it.",Handle the exception and re-raise it.
+"Add a raising 
+condition.",Add a raising condition.
+Raise a exception.,Raise a exception.
+Raise a Error,Raise a Error
+"Add a exception
+ handling block
+",Add a exception handling block
+"Change to a 
+specific 
+exception
+and change the
+ message error
+
+",Change to a specific exceptionand change the message error
+"Add a exception 
+handling block
+ and Handle 
+exceptions
+",Add a exception handling block and Handle exceptions
+"Add a raising
+ condition.",Add a raising condition.
+"Add a raising 
+condition and 
+raise 
+ error",Add a raising condition and raise  error
+Add type checking code,Add type checking code
+Add a exception,Add a exception
+Add finally,Add finally
+Fix issue,Fix issue
+Fix exception handling,Fix exception handling
+Add a raising condition,Add a raising condition
+Remove raise,Remove raise
+Handle a Exception,Handle a Exception
+Add a Exception Handling Block,Add a Exception Handling Block
+Import with a exception handling code.,Import with a exception handling code.
+Fix the message error parameter,Fix the message error parameter
+Fix lib version check,Fix lib version check
+Add another except block,Add another except block
+Handle exception and raise StopIteration,Handle exception and raise StopIteration
+Fix logic,Fix logic
+Fix string formatting,Fix string formatting
+Remove indentation,Remove indentation
+Move raise expression to another location,Move raise expression to another location
+Change exception to generic,Change exception to generic
+Fix exception handling block,Fix exception handling block
+Change error type,Change error type
+Fix raise message,Fix raise message
+Add a raise expression,Add a raise expression
+Fix handling block,Fix handling block
+Add if check,Add if check
+Change exception type,Change exception type
+Remove exception handling,Remove exception handling
+Remove raise statement,Remove raise statement
+Fix the message raised,Fix the message raised
+Add try pass,Add try pass
+Fix raise,Fix raise
+Fix API call and add a exception handling block,Fix API call and add a exception handling block
+Check value before the exception handling block,Check value before the exception handling block
+Wrap str() call,Wrap str() call
+Fix if check,Fix if check
+Remove finally block,Remove finally block
+Add return value,Add return value
+Remove the error message,Remove the error message
+Change raise type to specific,Change raise type to specific
+Fix raise expression,Fix raise expression
+Refactor code,Refactor code
+Add raise keyword,Add raise keyword
+Add continue keyword on except block,Add continue keyword on except block
+Change the logic of the handling block,Change the logic of the handling block
+Raise an exception,Raise an exception
+Raise errors,Raise errors
+Change the exception assertions,Change the exception assertions
+Change the logic in exception block,Change the logic in exception block
+Correct exception handling block,Correct exception handling block
+Add a exception handling block and especific exception type,Add a exception handling block and especific exception type
+Fix Identation of exception block,Fix Identation of exception block
+Change the logic of the handling mechanism,Change the logic of the handling mechanism
+Remove Exception handling block,Remove Exception handling block
+Raise especific error,Raise especific error
+Change the code inside the exception handling block,Change the code inside the exception handling block
+Add a exception handling block and raise errors,Add a exception handling block and raise errors
+Add exception handling block,Add exception handling block
+Raise especific errors,Raise especific errors
+Change the raise condition,Change the raise condition
+Change the error type,Change the error type
+change the try block,change the try block
+Add a exception handling block and Raise a exception,Add a exception handling block and Raise a exception
+Change the Raising Logic,Change the Raising Logic
+Change the Handling Logic,Change the Handling Logic
+adicionar verificações de typagem (corrigindo a logica) usando try-excepts para deixar o programa mais robusto.,adicionar verificações de typagem (corrigindo a logica) usando try-excepts para deixar o programa mais robusto.
+ Add a exception handling block and chance the exception handling block logic,Add a exception handling block and chance the exception handling block logic
+chance the exception handling block logic,chance the exception handling block logic
+Chance the exception handling block logic,Chance the exception handling block logic
+Change the message error and Add a exception handling block,Change the message error and Add a exception handling block
+Add a error type,Add a error type
+Change the exception type and Chance the exception handling block logic,Change the exception type and Chance the exception handling block logic
+Change to a specific exception and Raise a error,Change to a specific exception and Raise a error
+"Raise an error to 
+optimize 
+performance",Raise an error to optimize performance
+"Use exception
+ handling 
+mechanism to 
+change the logic",Use exception handling mechanism to change the logic
+"Use exception 
+handling 
+mechanism to 
+change the logic",Use exception handling mechanism to change the logic
+"Change to a 
+specific exception.",Change to a specific exception.
+"Add a exception 
+handling block",Add a exception handling block
+"Change the 
+exception type",Change the exception type
+Raises an error if the condition is not met,Raises an error if the condition is not met
+"Change to 
+apropriated  
+raising condition",Change to apropriated  raising condition
+"Move the 
+exception 
+handling block to
+ another part",Move the exception handling block to another part
+"Add a exception 
+handling block
+",Add a exception handling block
+"Use exception 
+handling mechanism 
+to change the logic",Use exception handling mechanism to change the logic
+"Add a exception 
+handling block 
+and Import with 
+a exception 
+handling code.
+",Add a exception handling block and Import with a exception handling code.
+"Change the 
+message error",Change the message error
+"Raise a error
+",Raise a error
+"Add a exception
+ type",Add a exception type
+"Add a 
+exception type",Add a exception type
+"Change to 
+apropriated 
+raising condition",Change to apropriated raising condition
+"Use exception 
+handling 
+mechanism to 
+change the logic 
+(changes the 
+logic  inside 
+handling block)",Use exception handling mechanism to change the logic (changes the logic  inside handling block)
+"Change the 
+message error, 
+Raise a error
+Change the 
+exception type
+","Change the message error, Raise a errorChange the exception type"
+"Change to 
+apropriated 
+raising 
+condition
+ and
+Change the 
+message error
+ ",Change to apropriated raising condition andChange the message error
+"Change the 
+Logic 
+to Raise a 
+exception 
+Correctly
+",Change the Logic to Raise a exception Correctly
+"Change the 
+Logic to Raise a
+ exception 
+Correctly",Change the Logic to Raise a exception Correctly
+"Change the 
+Logic to Raise 
+a exception
+Correctly and 
+Change the 
+message error
+",Change the Logic to Raise a exceptionCorrectly and Change the message error
+"Change the 
+Logic to Raise a 
+Error Correctly
+",Change the Logic to Raise a Error Correctly
+"Add a exception
+handling block 
+and Use
+exception 
+handling 
+mechanism to
+change the logic",Add a exceptionhandling block and Useexception handling mechanism tochange the logic
+"Handle a 
+exception
+",Handle a exception
+"Remove a 
+exception type",Remove a exception type
+"Move the 
+exception 
+handling block 
+to another part",Move the exception handling block to another part
+"Add message 
+error",Add message error
+"Use exception 
+handling 
+mechanism to 
+change the logic 
+(changes the 
+logic inside 
+handling block)",Use exception handling mechanism to change the logic (changes the logic inside handling block)
+"Change the 
+message error
+",Change the message error
+"Add a exception 
+type",Add a exception type
+"Use exception
+handling 
+mechanism to 
+change the logic
+",Use exceptionhandling mechanism to change the logic
+"Change the logic
+and remove
+the exception
+handling 
+mechanism",Change the logicand removethe exceptionhandling mechanism
+"Remove the 
+exception 
+handling 
+mechanism",Remove the exception handling mechanism
+"Change return
+ statement to
+ raise an error",Change return statement to raise an error
+"Remove the 
+raise mechanism",Remove the raise mechanism
+"Use exception
+handling 
+mechanism to 
+change the logic",Use exceptionhandling mechanism to change the logic
+"Add a raising 
+condition and
+Raise a Error",Add a raising condition andRaise a Error
+"Use exception
+ handling 
+mechanism to 
+change the logic
+and Add a 
+exception 
+handling block
+",Use exception handling mechanism to change the logicand Add a exception handling block
+"Change the
+ message error
+",Change the message error
+"Add a raising 
+condition
+",Add a raising condition
+"Change the 
+logic, 
+add a 
+exception 
+handling block, 
+raise a error
+","Change the logic, add a exception handling block, raise a error"
+"Add a exception
+handling block 
+(Handle a 
+exception and 
+raise a error)
+
+",Add a exceptionhandling block (Handle a exception and raise a error)
+"Change the logic,
+Add a exception
+ handling block
+","Change the logic,Add a exception handling block"
+"Add a exception
+handling block
+",Add a exceptionhandling block
+"add a condition 
+to handle a 
+exception
+",add a condition to handle a exception
+"Use exception 
+handling 
+mechanism to 
+change the logic 
+and add a 
+exception 
+handling block",Use exception handling mechanism to change the logic and add a exception handling block
+"Change to 
+apropriated  
+raising condition 
+and Change the 
+message error",Change to apropriated  raising condition and Change the message error
+"Raise a error
+and change 
+the logic",Raise a errorand change the logic
+"Change the
+logic and raise a
+error",Change thelogic and raise aerror
+"Add a exception 
+handling block
+
+",Add a exception handling block
+"Add a
+ exception 
+handling block
+",Add a exception handling block
+"Add a raising
+condition",Add a raisingcondition
+"Import with a 
+exception 
+handling code.",Import with a exception handling code.
+"Change the 
+Logic to Raise 
+a exception 
+Correctly",Change the Logic to Raise a exception Correctly
+"Change the 
+logic and
+add a finally",Change the logic andadd a finally
+"Change the 
+logic  ",Change the logic
+"Use exception 
+handling 
+mechanism to 
+change the logic
+and add a finally",Use exception handling mechanism to change the logicand add a finally
+"Add a exception
+type",Add a exceptiontype
+Add Import ,Add Import
+add a raise,add a raise
+Add Import,Add Import
+Edits error handling (remove raise),Edits error handling (remove raise)
+Add Exception (FileNotFoundError),Add Exception (FileNotFoundError)
+Change the msg error,Change the msg error
+?,?
+Change the logic except,Change the logic except
+Add a exception handling,Add a exception handling
+Add a exception type ,Add a exception type
+Change the interface/api call inside except,Change the interface/api call inside except
+Handle not ImplementedException,Handle not ImplementedException
+Handle Exception,Handle Exception
+Add a generic exception,Add a generic exception
+Add a raising,Add a raising
+Add Exception Handling Block,Add Exception Handling Block
+Message,Message
+Change the logic inside except,Change the logic inside except
+Change logic and a propertly Raise,Change logic and a propertly Raise
+" raise TypeError instead
+   of OverflowError",raise TypeError instead   of OverflowError
+Change raise type,Change raise type
+Add try-except block and change the logic,Add try-except block and change the logic
+now raises informative TypeError,now raises informative TypeError
+Remove Swalling Exceptions,Remove Swalling Exceptions
+Remove Raise,Remove Raise
+Logic and add exception handling block,Logic and add exception handling block
+Add a raise,Add a raise
+"Add import, Adjusts Messages","Add import, Adjusts Messages"
+Try block with Handle a exception,Try block with Handle a exception
+Import with exception handling,Import with exception handling
+Add Try-except handling,Add Try-except handling
+Handle a Exception and Add a raise,Handle a Exception and Add a raise
+add logic in except clause,add logic in except clause
+Add a Logger and Message error (Improve),Add a Logger and Message error (Improve)
+Add a Try-except,Add a Try-except
+Add a check before except,Add a check before except
+Handle the exception,Handle the exception
+Remove the exception and add a try-except pass with a raise,Remove the exception and add a try-except pass with a raise
+Change the logic,Change the logic
+Add import in except block,Add import in except block
+Fix the logic (Typo),Fix the logic (Typo)
+Remove the try-except block,Remove the try-except block
+Add a Swalloing Excception,Add a Swalloing Excception
+Handle a specific exception,Handle a specific exception
+Add a specific exception,Add a specific exception
+Add a condition check before message,Add a condition check before message
+Correct the logic (checks) and Add a raise,Correct the logic (checks) and Add a raise
+Add a try-except block,Add a try-except block
+Change the message to a appopriated one,Change the message to a appopriated one
+Remove the raising and log,Remove the raising and log
+Add a exception type,Add a exception type
+Check condition and raising addition,Check condition and raising addition
+Check condition and raising addition with meaningfull message,Check condition and raising addition with meaningfull message
+Remove the raise condittion and returnt a empty list,Remove the raise condittion and returnt a empty list
+Add a raise statement,Add a raise statement
+Check condition and raisin addition statement with a meanigfull message,Check condition and raisin addition statement with a meanigfull message
+Add a raising type,Add a raising type
+Skip Test using swallowing exception,Skip Test using swallowing exception
